@@ -1,10 +1,18 @@
 .header {
   width: 100%;
-  background-color: #14005c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a0466;
+  transition: all 250ms ease-in-out;
+  transition-duration: 300ms;
   .wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding-block: 20px;
+    padding-block: 10px;
   }
+}
+.goOff {
+  top: -112px;
 }

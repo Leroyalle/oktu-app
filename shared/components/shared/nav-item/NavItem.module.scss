@@ -1,0 +1,51 @@
+.navItem {
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 5px;
+  &:hover {
+    .icon {
+      rotate: 180deg;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    transition: color 150ms ease-in-out;
+  }
+  .icon {
+    transition: all 150ms ease-in-out;
+  }
+  .links {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    background-color: #1c0476;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .link {
+    font-size: 20px;
+    transition: color 150ms ease-in-out;
+    &:hover {
+      color: rgb(255 255 255 / 0.7);
+    }
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}

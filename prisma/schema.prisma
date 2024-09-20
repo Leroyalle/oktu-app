@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model MainSliderData {
+  id       Int     @id @default(autoincrement())
+  title    String
+  text     String?
+  link     Link?
+  imageUrl String
+}
+
+model Link {
+  id               Int             @id @default(autoincrement())
+  name             String
+  href             String
+  mainSliderData   MainSliderData? @relation(fields: [mainSliderDataId], references: [id])
+  mainSliderDataId Int?            @unique
+}
+
+model Department {
+  id Int @id @default(autoincrement())
+
+  name             String
+  imageUrl         String
+  shortDescription String
+
+  departmentItem DepartmentItem?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model DepartmentItem {
+  id Int @id @default(autoincrement())
+
+  bigImageUrl  String
+  description  String
+  department   Department? @relation(fields: [departmentId], references: [id])
+  departmentId Int?        @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Post {
+  id Int @id @default(autoincrement())
+
+  name             String
+  imageUrl         String
+  shortDescription String
+
+  postItem PostItem?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model PostItem {
+  id Int @id @default(autoincrement())
+
+  bigImageUrl String
+  description String
+  post        Post?  @relation(fields: [postId], references: [id])
+  postId      Int?   @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}

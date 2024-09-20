@@ -10,17 +10,18 @@ import styles from './NavBar.module.scss';
 
 interface Props {
   items: TNavigationDataBottom | TNavigationDataTop;
+  color?: string;
   className?: string;
 }
 
-export const NavBar: React.FC<Props> = ({ items, className }) => {
+export const NavBar: React.FC<Props> = ({ items, color = 'text-black', className }) => {
   return (
-    <div className={cn(styles.navBar, className)}>
+    <nav className={cn(styles.navBar, className)}>
       <ul className={styles.wrapper}>
         {items.map((item, i) => (
-          <NavItem key={i} name={item.name} href={item.href} links={item.links} />
+          <NavItem key={i} name={item.name} href={item.href} links={item.links} color={color} />
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };

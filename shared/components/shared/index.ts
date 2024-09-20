@@ -4,3 +4,8 @@ export { Providers } from './providers';
 export { Header } from './header';
 export { NavBar } from './nav-bar';
 export { Logo } from './logo';
+export { MainSlider } from './main-slider';
+export { MainSliderItem } from './main-slider-item';
+export { InfoBlock } from './info-block';
+export { Direction } from './direction';
+export { Department } from './department';

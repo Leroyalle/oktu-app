@@ -1,0 +1,13 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .text {
+    transition: color 150ms ease-in-out;
+    font-size: 18px;
+    color: white;
+    &:hover {
+      color: rgb(255 255 255 / 0.7);
+    }
+  }
+}

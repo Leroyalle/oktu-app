@@ -1,0 +1,35 @@
+.inner {
+  .content {
+    max-width: 864px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    top: 170px;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    h4 {
+      font-size: 45px;
+      font-weight: 700;
+      font-family: 'Inter';
+      text-shadow: 1px 1px 1px black;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 28px;
+      font-family: 'Inter';
+      text-shadow: 1px 1px 1px black;
+      font-weight: 500;
+    }
+    button {
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: 'Inter';
+      text-shadow: 1px 1px 1px black;
+      font-weight: 500;
+    }
+  }
+}

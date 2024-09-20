@@ -1,11 +1,14 @@
-export default function RootLayout({
+import { Header } from '@/shared/components/shared';
+
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <main className="min-h-screen">
+      <Header />
+      {children}
+    </main>
   );
 }
