@@ -1,6 +1,8 @@
 .header {
   width: 100%;
   position: sticky;
+  display: flex;
+  flex-direction: column;
   top: 0;
   z-index: 1000;
   background-color: #1a0466;
@@ -8,11 +10,19 @@
   transition-duration: 300ms;
   .wrapper {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding-block: 10px;
   }
+  .navBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 15px;
+  }
 }
 .goOff {
-  top: -112px;
+  top: -140px;
 }

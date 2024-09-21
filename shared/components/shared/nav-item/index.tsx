@@ -11,11 +11,11 @@ interface Props {
     name: string;
     href: string;
   }[];
-  color?: string;
+  itemStyles?: string;
   className?: string;
 }
 
-export const NavItem: React.FC<Props> = ({ name, href, links, color, className }) => {
+export const NavItem: React.FC<Props> = ({ name, href, links, itemStyles, className }) => {
   const [visible, setVisible] = React.useState(false);
   const ref = React.useRef<HTMLLIElement>(null);
 
@@ -40,12 +40,12 @@ export const NavItem: React.FC<Props> = ({ name, href, links, color, className }
   return (
     // TODO: чтобы не было дыры между элементом и ссылками
     <li ref={ref} className={cn(styles.navItem, className)}>
-      <div className={cn(styles.item, color)}>
+      <div className={cn(styles.item, itemStyles)}>
         {links.length > 0 && <ChevronDown className={styles.icon} />}
         <Link href={`${href}`}>{name}</Link>
       </div>
       {links.length > 0 && (
-        <ul className={cn(`${styles.links} ${visible && styles.visible}`)}>
+        <ul className={cn(`${styles.links} ${visible && styles.visible} scrollbar`)}>
           {links?.map(({ name, href }, i) => (
             <li key={i} className={styles.link}>
               <Link href={href}>{name}</Link>

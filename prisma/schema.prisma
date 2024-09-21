@@ -8,19 +8,43 @@ datasource db {
 }
 
 model MainSliderData {
-  id       Int     @id @default(autoincrement())
-  title    String
+  id Int @id @default(autoincrement())
+
+  title    String?
   text     String?
   link     Link?
   imageUrl String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Link {
-  id               Int             @id @default(autoincrement())
-  name             String
-  href             String
+  id Int @id @default(autoincrement())
+
+  name String
+  href String
+
   mainSliderData   MainSliderData? @relation(fields: [mainSliderDataId], references: [id])
   mainSliderDataId Int?            @unique
+
+  quote   Quote? @relation(fields: [quoteId], references: [id])
+  quoteId Int?   @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Quote {
+  id Int @id @default(autoincrement())
+
+  author   String
+  text     String
+  imageUrl String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Link      Link?
 }
 
 model Department {
@@ -33,7 +57,7 @@ model Department {
   departmentItem DepartmentItem?
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
+  updatedAt DateTime @updatedAt
 }
 
 model DepartmentItem {
@@ -45,7 +69,7 @@ model DepartmentItem {
   departmentId Int?        @unique
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
+  updatedAt DateTime @updatedAt
 }
 
 model Post {
@@ -58,7 +82,7 @@ model Post {
   postItem PostItem?
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
+  updatedAt DateTime @updatedAt
 }
 
 model PostItem {
@@ -70,5 +94,16 @@ model PostItem {
   postId      Int?   @unique
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
+  updatedAt DateTime @updatedAt
+}
+
+model TitlesSection {
+  id Int @id @default(autoincrement())
+
+  name     String
+  href     String
+  imageUrl String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

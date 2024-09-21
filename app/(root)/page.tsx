@@ -1,29 +1,31 @@
-import { prisma } from '@/prisma/prisma-client';
-import { Container, Direction, MainSlider, NavBar } from '@/shared/components/shared';
-import { navigationData } from '@/shared/constants';
-
+import {
+  Container,
+  Departments,
+  QuoteBlock,
+  MainSlider,
+  TitlesBlock,
+} from '@/shared/components/shared';
+import { useData } from '@/shared/hooks';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 
 export default async function Home() {
-  const mainSliderData = await prisma.mainSliderData.findMany({
-    include: {
-      link: true,
-    },
-  });
+  const { mainSliderData, departments, quote, titles } = await useData();
 
   return (
     <Container>
-      <div className="my-5 flex justify-center items-center">
-        <NavBar items={navigationData.bottom} color={'text-black hover:text-blue-700'} />
-      </div>
-      {/* TODO: изменить текст внутри слайдера */}
       <MainSlider items={mainSliderData} />
-      <div className="mt-8">
-        <Direction />
+      <div className="mt-20">
+        <QuoteBlock quote={quote} />
       </div>
-      <div className="pb-[50%]"></div>
+      <div className="mt-20">
+        <Departments items={departments} />
+      </div>
+      <div className="mt-36 mb-20">
+        <TitlesBlock items={titles} />
+      </div>
+      {/* <div className="pb-[50%]"/> */}
     </Container>
   );
 }

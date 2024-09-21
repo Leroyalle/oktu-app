@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    img {
+      order: -1;
+    }
+  }
+  padding: 50px 100px;
+  background-color: rgb(233, 233, 245);
+  .inner {
+    width: 100%;
+    justify-self: start;
+    align-self: start;
+    .title {
+      font-size: 18px;
+      color: rgb(87, 87, 87);
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 450px;
+    border-radius: 8px;
+    justify-self: end;
+  }
+  a {
+    margin-top: 10px;
+    display: block;
+  }
+  button {
+    font-size: 16px;
+    font-family: 'Inter';
+    border-radius: 4px;
+    font-weight: 500;
+    font-weight: 600;
+    padding: 25px 20px;
+  }
+}

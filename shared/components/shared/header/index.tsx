@@ -17,9 +17,15 @@ export const Header: React.FC = () => {
           <Logo />
         </div>
         <div className={styles.inner}>
-          <NavBar items={navigationData.top} color={'text-white hover:text-white/70'} />
-        </div>
+          <NavBar items={navigationData.top} itemStyles={'text-white hover:text-white/70'} />
+        </div>{' '}
       </Container>
+      <div className={styles.navBottom}>
+        <NavBar
+          items={navigationData.bottom}
+          itemStyles={'text-black hover:text-blue-700 pb-[15px]'}
+        />
+      </div>
     </header>
   );
 };

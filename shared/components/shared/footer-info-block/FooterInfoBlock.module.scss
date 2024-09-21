@@ -1,0 +1,13 @@
+.root {
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    span {
+      color: white;
+
+      font-size: 25px;
+      font-family: 'Inter';
+    }
+  }
+}

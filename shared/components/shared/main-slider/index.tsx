@@ -4,14 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { TMainSliderData } from '@/shared/constants/main-slider';
 import { MainSliderItem } from '../main-slider-item';
 import { Link, MainSliderData } from '@prisma/client';
+import { MainSliderDataWithRelations } from '@/@types/main-slider-data';
 // TODO: отрефакторить и поделить
 
-type MainSliderDataWithRelations = MainSliderData & {
-  link: Link | null;
-};
 interface Props {
   items: MainSliderDataWithRelations[];
   className?: string;

@@ -16,6 +16,16 @@ export const navigationData = {
       links: [],
     },
     {
+      name: 'Руководство',
+      href: '/structure/teach-staff',
+      links: [],
+    },
+    {
+      name: 'Педагогический состав',
+      href: '/structure/teach-staff',
+      links: [],
+    },
+    {
       name: 'ФП "Профессионалитет"',
       href: '/fp-professionals',
       links: [],
@@ -31,7 +41,7 @@ export const navigationData = {
           href: '/information/common',
         },
         {
-          name: 'Основные сведения',
+          name: 'Структура и органы управления образовательной организацией',
           href: '/information/structure',
         },
         {
@@ -42,8 +52,37 @@ export const navigationData = {
           name: 'Образование',
           href: '/structure/education',
         },
+
         {
-          name: 'Руководство',
+          name: 'Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда.',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Платные образовательные услуги',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Финансово-хозяйственная деятельность',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Вакантные места для приема (перевода) обучающихся',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Стипендии и меры поддержки обучающихся',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Международное сотрудничество',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Организация питания в образовательной организации',
+          href: '/structure/teach-staff',
+        },
+        {
+          name: 'Образовательные стандарты и требования',
           href: '/structure/teach-staff',
         },
       ],

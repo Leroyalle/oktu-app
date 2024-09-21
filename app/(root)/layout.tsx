@@ -1,4 +1,4 @@
-import { Header } from '@/shared/components/shared';
+import { Footer, Header } from '@/shared/components/shared';
 
 export default function HomeLayout({
   children,
@@ -9,6 +9,7 @@ export default function HomeLayout({
     <main className="min-h-screen">
       <Header />
       {children}
+      <Footer />
     </main>
   );
 }
