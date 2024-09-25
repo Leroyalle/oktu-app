@@ -23,7 +23,7 @@ export const QuoteBlock: React.FC<Props> = ({ quote, className }) => {
         <QuoteText text={quote.text} />
         {quote.link && (
           <Link href={quote.link.href}>
-            <Button>Из рабочего графика</Button>
+            <Button>{quote.link.name}</Button>
           </Link>
         )}
       </div>

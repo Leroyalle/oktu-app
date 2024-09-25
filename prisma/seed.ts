@@ -326,6 +326,83 @@ async function up() {
       },
     ],
   });
+
+  await prisma.direction.createMany({
+    data: [
+      {
+        role: 'Директор',
+        fullName: 'Лаптева Ксения Николаевна',
+        phone: 74843960167,
+        email: 'ksl299@yandex.ru',
+      },
+      {
+        role: 'Зам. директора по УР',
+        fullName: 'Наталья Лучина',
+        phone: 74843963888,
+        email: 'kolledg-nmz@mail.ru',
+      },
+      {
+        role: 'Зам. директора по УПР',
+        fullName: 'Вера Тарасова',
+        phone: 74843933186,
+        email: 'vera-tumanova@mail.ru',
+      },
+      {
+        role: 'Зам. директора по УПР',
+        fullName: 'Юлия Кочеватова',
+        phone: 74843967321,
+        email: 'jul_informatio@mail.ru',
+      },
+      {
+        role: 'Зам. директора по УВР',
+        fullName: 'Елена Бусловская',
+        phone: 74843964487,
+        email: 'buelvl@mail.ru',
+      },
+    ],
+  });
+
+  await prisma.teachStaff.createMany({
+    data: [
+      {
+        role: 'Педагог',
+        fullName: 'Мурка со спицами',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Яндекс космонавт',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Сэр Дукли Гэй',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Эдиты Фри',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Настрой Калькуль',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Дороже Бургеров',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Александр Ус',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Шапочка Фольги',
+      },
+      {
+        role: 'Педагог',
+        fullName: 'Смерть Есенина',
+      },
+    ],
+  });
+
   await prisma.link.createMany({
     data: [
       {
@@ -360,6 +437,8 @@ async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "Post" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "Image" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "ImageItem" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "Direction" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "TeachStaff" RESTART IDENTITY CASCADE`;
 }
 async function main() {
   try {

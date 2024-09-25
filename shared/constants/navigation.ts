@@ -17,7 +17,7 @@ export const navigationData = {
     },
     {
       name: 'Руководство',
-      href: '/structure/teach-staff',
+      href: '/structure/direction',
       links: [],
     },
     {
@@ -38,11 +38,11 @@ export const navigationData = {
       links: [
         {
           name: 'Основные сведения',
-          href: '/information/common',
+          href: '/structure/common',
         },
         {
           name: 'Структура и органы управления образовательной организацией',
-          href: '/information/structure',
+          href: '/structure/cm',
         },
         {
           name: 'Документы',
@@ -53,36 +53,40 @@ export const navigationData = {
           href: '/structure/education',
         },
         {
-          name: 'Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда.',
-          href: '/structure/teach-staff',
+          name: 'Материально-техническое обеспечение и оснащенность образовательного процесса.',
+          href: '/structure/objects',
+        },
+        {
+          name: 'Доступная среда.',
+          href: '/structure/accessible-env',
         },
         {
           name: 'Платные образовательные услуги',
-          href: '/structure/teach-staff',
+          href: '/structure/paid_education',
         },
         {
           name: 'Финансово-хозяйственная деятельность',
-          href: '/structure/teach-staff',
+          href: '/structure/budget',
         },
         {
           name: 'Вакантные места для приема (перевода) обучающихся',
-          href: '/structure/teach-staff',
+          href: '/structure/vacancies',
         },
         {
           name: 'Стипендии и меры поддержки обучающихся',
-          href: '/structure/teach-staff',
+          href: '/structure/support',
         },
         {
           name: 'Международное сотрудничество',
-          href: '/structure/teach-staff',
+          href: '/structure/international',
         },
         {
           name: 'Организация питания в образовательной организации',
-          href: '/structure/teach-staff',
+          href: '/structure/feeding',
         },
         {
           name: 'Образовательные стандарты и требования',
-          href: '/structure/teach-staff',
+          href: '/structure/standard',
         },
       ],
     },
@@ -101,7 +105,7 @@ export const navigationData = {
       ],
     },
     {
-      name: 'Абитуриенту',
+      name: 'Абитуриентам',
       href: '/enrollee',
       links: [
         {

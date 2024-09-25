@@ -1,0 +1,16 @@
+.root {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  strong {
+    font-weight: 900;
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      &::before {
+        content: '– ';
+      }
+    }
+  }
+}

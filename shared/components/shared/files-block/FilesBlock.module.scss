@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  ul {
+    li {
+      width: fit-content;
+
+      border-radius: 4px;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        background-color: #e7edf6;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ model MainSliderData {
   imageUrl String
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Link {
@@ -32,7 +32,7 @@ model Link {
   quoteId Int?   @unique
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Quote {
@@ -45,7 +45,7 @@ model Quote {
   link Link?
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Department {
@@ -58,7 +58,7 @@ model Department {
   departmentItem DepartmentItem?
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model DepartmentItem {
@@ -70,7 +70,7 @@ model DepartmentItem {
   departmentId Int?        @unique
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Post {
@@ -83,7 +83,7 @@ model Post {
   postItem PostItem?
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model PostItem {
@@ -95,7 +95,7 @@ model PostItem {
   postId      Int?   @unique
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model TitlesSection {
@@ -106,7 +106,7 @@ model TitlesSection {
   imageUrl String
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Image {
@@ -117,7 +117,7 @@ model Image {
   imageItem ImageItem[]
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model ImageItem {
@@ -128,5 +128,30 @@ model ImageItem {
   imageId  Int
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Direction {
+  id Int @id @default(autoincrement())
+
+  role     String
+  fullName String
+  phone    BigInt
+  email    String
+  order    Int    @default(1)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model TeachStaff {
+  id Int @id @default(autoincrement())
+
+  role     String
+  fullName String
+  // TODO: добавить отдельную таблицу с уроками и привязать к преподавателю subject  String 
+  order    Int    @default(1)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }

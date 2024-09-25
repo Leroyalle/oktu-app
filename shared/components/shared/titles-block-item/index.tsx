@@ -1,6 +1,5 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
-import Image from 'next/image';
 import styles from './TitlesBlockItem.module.scss';
 import { MoveRight } from 'lucide-react';
 import Link from 'next/link';
@@ -16,7 +15,7 @@ export const TitlesBlockItem: React.FC<Props> = ({ name, href, imageUrl, classNa
   return (
     <li className={cn(styles.root, className)}>
       <Link className={styles.wrapper} href={href}>
-        <Image src={imageUrl} alt={name} width={300} height={300} />
+        <img src={imageUrl} alt={name} width={300} height={300} />
         <div className={styles.content}>
           <span>{name}</span>
           <MoveRight />

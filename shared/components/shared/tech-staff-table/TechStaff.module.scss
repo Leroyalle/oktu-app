@@ -1,0 +1,26 @@
+.root {
+  table {
+    width: 100%;
+
+    thead {
+      th {
+        text-align: start;
+      }
+    }
+    tr,
+    td,
+    th {
+      padding: 0.9375rem 1.875rem;
+      border-width: 1px 0 1px 0;
+      border-color: #dbdee7;
+      border-style: solid;
+      a {
+        color: blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.colored {
+  background-color: #d5e2ef;
+}

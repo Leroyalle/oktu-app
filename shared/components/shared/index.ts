@@ -19,4 +19,10 @@ export { FooterContactsItem } from './footer-contacts-item';
 export { FooterInfoBlockHead } from './footer-info-block-head';
 export { NewsWrapper } from './news-wrapper';
 export { GalleryWrapper } from './gallery-wrapper';
+export { ContactsBlock } from './contacts-block';
+export { DirectionTable } from './direction-table';
+export { SimilarLinks } from './similar-links';
+export { TechStaffTable } from './tech-staff-table';
+export { CommonBlockInfo } from './common-block-info';
+export { CmInfoBlock } from './cm-info-block';
 // TODO: экспортировать только то что используется на страницах

@@ -29,6 +29,7 @@ export const NewsWrapper: React.FC<Props> = ({ className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <NewsSection items={newsStore.items} loading={newsStore.loading} />
+      {/* TODO: анимация при загрузке */}
       <div ref={ref} />
     </section>
   );
