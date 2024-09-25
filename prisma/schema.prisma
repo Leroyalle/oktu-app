@@ -42,9 +42,10 @@ model Quote {
   text     String
   imageUrl String?
 
+  link Link?
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Link      Link?
 }
 
 model Department {
@@ -103,6 +104,28 @@ model TitlesSection {
   name     String
   href     String
   imageUrl String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Image {
+  id Int @id @default(autoincrement())
+
+  name String
+
+  imageItem ImageItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ImageItem {
+  id Int @id @default(autoincrement())
+
+  imageUrl String
+  image    Image  @relation(fields: [imageId], references: [id])
+  imageId  Int
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

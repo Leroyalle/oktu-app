@@ -1,4 +1,7 @@
-.navBar {
+.root {
+  @media (max-width: 1440px) {
+    padding-inline: 10px;
+  }
   .wrapper {
     display: flex;
     align-items: center;

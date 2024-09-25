@@ -16,7 +16,7 @@ interface Props {
 
 export const NavBar: React.FC<Props> = ({ items, itemStyles = 'text-black', className }) => {
   return (
-    <nav className={cn(styles.navBar, className)}>
+    <nav className={cn(styles.root, className)}>
       <ul className={styles.wrapper}>
         {items.map((item, i) => (
           <NavItem

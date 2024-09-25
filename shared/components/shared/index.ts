@@ -16,3 +16,7 @@ export { Footer } from './footer';
 export { FooterInfoBlock } from './footer-info-block';
 export { FooterContacts } from './footer-contacts';
 export { FooterContactsItem } from './footer-contacts-item';
+export { FooterInfoBlockHead } from './footer-info-block-head';
+export { NewsWrapper } from './news-wrapper';
+export { GalleryWrapper } from './gallery-wrapper';
+// TODO: экспортировать только то что используется на страницах

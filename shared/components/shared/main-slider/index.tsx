@@ -6,8 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { MainSliderItem } from '../main-slider-item';
 import { Link, MainSliderData } from '@prisma/client';
-import { MainSliderDataWithRelations } from '@/@types/main-slider-data';
-// TODO: отрефакторить и поделить
+import { MainSliderDataWithRelations } from '@/@types/dataDTO';
+// TODO: отрефакторить и
 
 interface Props {
   items: MainSliderDataWithRelations[];

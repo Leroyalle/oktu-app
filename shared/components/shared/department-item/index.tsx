@@ -21,6 +21,7 @@ export const DepartmentItem: React.FC<Props> = ({
   className,
 }) => {
   return (
+    // TODO: переписать на article
     <Link href={`/department/${id}`} className={cn(styles.root, className)}>
       <img src={imageUrl} alt={name} width={223} height={223} />
 

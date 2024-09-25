@@ -5,10 +5,10 @@ import styles from './QuoteBlock.module.scss';
 import { Button } from '../../ui';
 import Link from 'next/link';
 import { QuoteText } from '../quote-text';
-import { Quote } from '@prisma/client';
+import { QuoteWithRelations } from '@/@types/dataDTO';
 
 interface Props {
-  quote: Quote | null;
+  quote: QuoteWithRelations | null;
   className?: string;
 }
 
@@ -21,11 +21,15 @@ export const QuoteBlock: React.FC<Props> = ({ quote, className }) => {
       <div className={styles.inner}>
         <p className={styles.title}>{quote.author}</p>
         <QuoteText text={quote.text} />
-        <Link href={quote.imageUrl}>
-          <Button>Из рабочего графика</Button>
-        </Link>
+        {quote.link && (
+          <Link href={quote.link.href}>
+            <Button>Из рабочего графика</Button>
+          </Link>
+        )}
       </div>
-      <Image priority src={quote.imageUrl ?? ''} alt={'direction'} width={500} height={400} />
+      {quote.imageUrl && (
+        <Image priority src={quote.imageUrl} alt={'direction'} width={500} height={400} />
+      )}
     </div>
   );
 };

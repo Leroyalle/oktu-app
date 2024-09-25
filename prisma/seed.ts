@@ -133,6 +133,199 @@ async function up() {
     ],
   });
 
+  await prisma.post.createMany({
+    data: [
+      {
+        name: 'Шахматный турнир открыт!',
+        shortDescription: 'В ОКТУ начался отбор первого тура шахматного турнира Сутулая Пешка',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=cdf2d76e485908eaf391fae7edf9fe1c_l-5468554-images-thumbs&n=13',
+      },
+      {
+        name: 'Вкусно и точка.',
+        shortDescription:
+          'Со следующей недели в нашем колледже еда в столовой выйдет на новый уровень!',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=e617fbac4d50e0028654f4e1b514678d_l-6625580-images-thumbs&n=13',
+      },
+      {
+        name: 'Снова разборки...',
+        shortDescription:
+          'В столовой после приема пищи, местный бунтарь Женя опять устроил бутчу из-за недоложенных кобачков в порции',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4ebccee4fdb3c283ad7ba845af92df3a_l-8312904-images-thumbs&n=13',
+      },
+      {
+        name: 'Завершился  третий Хакатон!',
+        shortDescription: 'Грандиозная победа в состезании HTML-gods',
+        imageUrl: 'https://live.staticflickr.com/8273/8824555500_865d4e1f26_b.jpg',
+      },
+      {
+        name: 'Приглашаем всех',
+        shortDescription: 'Сегодня во всех 3 отделениях начался день открытых дверей',
+        imageUrl:
+          'https://www.transitionslifecare.org/wp-content/uploads/2023/02/hd-wallpaper-gb7b6997dc_1920.jpg',
+      },
+      {
+        name: 'Новая звезда',
+        shortDescription: 'Новый преподаватель уже во всю обучает студентов IT направления',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4529b2f7d26f3fc55bca3b6debe22b18_l-7046448-images-thumbs&n=13',
+      },
+      {
+        name: 'Шахматный турнир открыт!',
+        shortDescription: 'В ОКТУ начался отбор первого тура шахматного турнира Сутулая Пешка',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=cdf2d76e485908eaf391fae7edf9fe1c_l-5468554-images-thumbs&n=13',
+      },
+      {
+        name: 'Вкусно и точка.',
+        shortDescription:
+          'Со следующей недели в нашем колледже еда в столовой выйдет на новый уровень!',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=e617fbac4d50e0028654f4e1b514678d_l-6625580-images-thumbs&n=13',
+      },
+      {
+        name: 'Снова разборки...',
+        shortDescription:
+          'В столовой после приема пищи, местный бунтарь Женя опять устроил бутчу из-за недоложенных кобачков в порции',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4ebccee4fdb3c283ad7ba845af92df3a_l-8312904-images-thumbs&n=13',
+      },
+      {
+        name: 'Завершился  третий Хакатон!',
+        shortDescription: 'Грандиозная победа в состезании HTML-gods',
+        imageUrl: 'https://live.staticflickr.com/8273/8824555500_865d4e1f26_b.jpg',
+      },
+      {
+        name: 'Приглашаем всех',
+        shortDescription: 'Сегодня во всех 3 отделениях начался день открытых дверей',
+        imageUrl:
+          'https://www.transitionslifecare.org/wp-content/uploads/2023/02/hd-wallpaper-gb7b6997dc_1920.jpg',
+      },
+      {
+        name: 'Новая звезда',
+        shortDescription: 'Новый преподаватель уже во всю обучает студентов IT направления',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4529b2f7d26f3fc55bca3b6debe22b18_l-7046448-images-thumbs&n=13',
+      },
+      {
+        name: 'Шахматный турнир открыт!',
+        shortDescription: 'В ОКТУ начался отбор первого тура шахматного турнира Сутулая Пешка',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=cdf2d76e485908eaf391fae7edf9fe1c_l-5468554-images-thumbs&n=13',
+      },
+      {
+        name: 'Вкусно и точка.',
+        shortDescription:
+          'Со следующей недели в нашем колледже еда в столовой выйдет на новый уровень!',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=e617fbac4d50e0028654f4e1b514678d_l-6625580-images-thumbs&n=13',
+      },
+      {
+        name: 'Снова разборки...',
+        shortDescription:
+          'В столовой после приема пищи, местный бунтарь Женя опять устроил бутчу из-за недоложенных кобачков в порции',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4ebccee4fdb3c283ad7ba845af92df3a_l-8312904-images-thumbs&n=13',
+      },
+      {
+        name: 'Завершился  третий Хакатон!',
+        shortDescription: 'Грандиозная победа в состезании HTML-gods',
+        imageUrl: 'https://live.staticflickr.com/8273/8824555500_865d4e1f26_b.jpg',
+      },
+      {
+        name: 'Приглашаем всех',
+        shortDescription: 'Сегодня во всех 3 отделениях начался день открытых дверей',
+        imageUrl:
+          'https://www.transitionslifecare.org/wp-content/uploads/2023/02/hd-wallpaper-gb7b6997dc_1920.jpg',
+      },
+      {
+        name: 'Новая звезда',
+        shortDescription: 'Новый преподаватель уже во всю обучает студентов IT направления',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4529b2f7d26f3fc55bca3b6debe22b18_l-7046448-images-thumbs&n=13',
+      },
+      {
+        name: 'Шахматный турнир открыт!',
+        shortDescription: 'В ОКТУ начался отбор первого тура шахматного турнира Сутулая Пешка',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=cdf2d76e485908eaf391fae7edf9fe1c_l-5468554-images-thumbs&n=13',
+      },
+      {
+        name: 'Вкусно и точка.',
+        shortDescription:
+          'Со следующей недели в нашем колледже еда в столовой выйдет на новый уровень!',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=e617fbac4d50e0028654f4e1b514678d_l-6625580-images-thumbs&n=13',
+      },
+      {
+        name: 'Снова разборки...',
+        shortDescription:
+          'В столовой после приема пищи, местный бунтарь Женя опять устроил бутчу из-за недоложенных кобачков в порции',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4ebccee4fdb3c283ad7ba845af92df3a_l-8312904-images-thumbs&n=13',
+      },
+      {
+        name: 'Завершился  третий Хакатон!',
+        shortDescription: 'Грандиозная победа в состезании HTML-gods',
+        imageUrl: 'https://live.staticflickr.com/8273/8824555500_865d4e1f26_b.jpg',
+      },
+      {
+        name: 'Приглашаем всех',
+        shortDescription: 'Сегодня во всех 3 отделениях начался день открытых дверей',
+        imageUrl:
+          'https://www.transitionslifecare.org/wp-content/uploads/2023/02/hd-wallpaper-gb7b6997dc_1920.jpg',
+      },
+      {
+        name: 'Новая звезда',
+        shortDescription: 'Новый преподаватель уже во всю обучает студентов IT направления',
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=4529b2f7d26f3fc55bca3b6debe22b18_l-7046448-images-thumbs&n=13',
+      },
+    ],
+  });
+
+  await prisma.image.createMany({
+    data: [
+      {
+        name: 'На всеобщем собрании',
+      },
+      {
+        name: 'Собрание перед повышением квалификации',
+      },
+      {
+        name: 'Атомный диктант',
+      },
+    ],
+  });
+
+  await prisma.imageItem.createMany({
+    data: [
+      {
+        imageUrl:
+          'https://avatars.mds.yandex.net/i?id=2a000001921cac0d87d36cc3d3fc31ec391e-934138-fast-images&n=13',
+        imageId: 1,
+      },
+      {
+        imageUrl: 'https://smolgazeta.ru/fc-web/fc-files/2024/09/147762.jpg',
+        imageId: 1,
+      },
+      {
+        imageUrl: 'https://img-fotki.yandex.ru/get/103922/319871141.41/0_1d9f09_bf7effb_orig.jpg',
+        imageId: 2,
+      },
+      {
+        imageUrl: 'https://apt29.ru/wp-content/uploads/2021/06/DSC_0007-3-2048x1365.jpg',
+        imageId: 2,
+      },
+      {
+        imageUrl:
+          'https://ilmen.minobr63.ru/wp-content/uploads/IMG-8759ad1130b718b6ab3f6e9d331cb7a7-V.jpg',
+        imageId: 3,
+      },
+    ],
+  });
   await prisma.link.createMany({
     data: [
       {
@@ -164,6 +357,9 @@ async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "Link" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "Quote" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "TitlesSection" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "Post" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "Image" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "ImageItem" RESTART IDENTITY CASCADE`;
 }
 async function main() {
   try {

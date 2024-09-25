@@ -1,13 +1,21 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
   .head {
     display: flex;
     align-items: center;
     gap: 30px;
     span {
       color: white;
-
       font-size: 25px;
       font-family: 'Inter';
     }
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }

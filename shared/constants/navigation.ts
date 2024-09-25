@@ -52,7 +52,6 @@ export const navigationData = {
           name: 'Образование',
           href: '/structure/education',
         },
-
         {
           name: 'Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда.',
           href: '/structure/teach-staff',
@@ -102,7 +101,7 @@ export const navigationData = {
       ],
     },
     {
-      name: 'Аббитаруенту',
+      name: 'Абитуриенту',
       href: '/enrollee',
       links: [
         {
@@ -144,8 +143,69 @@ export const navigationData = {
       ],
     },
   ],
+  footerInfo: [
+    {
+      name: 'Сведения об общеобразовательной организации',
+      href: '/information',
+      links: [],
+    },
+    {
+      name: 'Стипендии и меры поддержки обучающихся',
+      href: '/structure/teach-staff',
+      links: [],
+    },
+  ],
+  footerNav: [
+    {
+      name: 'Новости',
+      href: '/news',
+      links: [],
+    },
+    {
+      name: 'Галерея',
+      href: '/gallery',
+      links: [],
+    },
+    {
+      name: 'Связаться с нами',
+      href: '/contacts',
+      links: [],
+    },
+    {
+      name: 'Абитуриентам',
+      href: '/news',
+      links: [],
+    },
+    {
+      name: 'Руководство',
+      href: '/structure/teach-staff',
+      links: [],
+    },
+    {
+      name: 'Педагогический состав',
+      href: '/structure/teach-staff',
+      links: [],
+    },
+    {
+      name: 'ФП "Профессионалитет"',
+      href: '/fp-professionals',
+      links: [],
+    },
+    {
+      name: 'Документы',
+      href: '/structure/docs',
+      links: [],
+    },
+    {
+      name: 'Образование',
+      href: '/structure/education',
+      links: [],
+    },
+  ],
 };
 
 export type TNavigation = typeof navigationData;
 export type TNavigationDataTop = typeof navigationData.top;
 export type TNavigationDataBottom = typeof navigationData.bottom;
+export type TNavigationDataInfo = typeof navigationData.footerInfo;
+export type TNavigationDataFooterNav = typeof navigationData.footerNav;

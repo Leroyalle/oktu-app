@@ -24,14 +24,13 @@
     z-index: 100;
     background-color: #1c0476;
     transition: all 150ms ease-in-out;
-    visibility: hidden;
-    opacity: 0;
+    // visibility: hidden;
+    display: flex;
     color: white;
     padding: 20px;
     position: absolute;
     top: 40px;
     left: 0;
-    display: flex;
     // ! justify-content: center;
     flex-direction: column;
     row-gap: 20px;
@@ -47,7 +46,8 @@
     }
   }
   .visible {
-    visibility: visible;
+    // visibility: visible;
+    display: block !important;
     opacity: 1;
   }
 }

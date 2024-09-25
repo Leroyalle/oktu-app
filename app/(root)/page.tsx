@@ -5,13 +5,13 @@ import {
   MainSlider,
   TitlesBlock,
 } from '@/shared/components/shared';
-import { useData } from '@/shared/hooks';
+import { useServerData } from '@/shared/hooks';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 
 export default async function Home() {
-  const { mainSliderData, departments, quote, titles } = await useData();
+  const { mainSliderData, departments, quote, titles } = await useServerData();
 
   return (
     <Container>

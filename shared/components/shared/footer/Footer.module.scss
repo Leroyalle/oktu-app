@@ -2,6 +2,10 @@
   background-color: #1a0466;
   width: 100%;
   .wrapper {
-    padding: 70px 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 70px 150px;
+    row-gap: 30px;
+    column-gap: 20px;
   }
 }

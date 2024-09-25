@@ -1,0 +1,42 @@
+.root {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 0 20px 0;
+  .wrapper {
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .imageInner {
+    width: 49%;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+  img {
+    display: block;
+    height: 100%;
+    aspect-ratio: 4/2;
+    width: 100%;
+    border-radius: 4px;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    .date {
+      color: rgb(47, 47, 47);
+      font-weight: 500;
+      margin: 5px 0 0 0;
+    }
+    .name {
+      font-weight: 600;
+      font-size: 20px;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+  }
+}

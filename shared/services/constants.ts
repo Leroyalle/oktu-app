@@ -1,3 +1,4 @@
 export enum ApiRouter {
-  department = 'department',
+  post = 'post',
+  image = 'image',
 }

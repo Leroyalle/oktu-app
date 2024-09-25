@@ -1,0 +1,39 @@
+.root {
+  max-width: 500px;
+  border-radius: 4px;
+  .inner {
+    overflow: hidden;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+      transition: all 350ms ease-in-out;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      .date {
+        color: rgb(47, 47, 47);
+        font-weight: 500;
+        margin: 5px 0;
+      }
+      .name {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

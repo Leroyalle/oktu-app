@@ -10,8 +10,11 @@ interface Props {
 }
 
 export const TitlesBlock: React.FC<Props> = ({ items, className }) => {
+  if (!items) {
+    return;
+  }
   return (
-    <section className={cn(styles.root, className)}>
+    <article className={cn(styles.root, className)}>
       <ul>
         {items.map((item, index) => (
           <TitlesBlockItem
@@ -23,6 +26,6 @@ export const TitlesBlock: React.FC<Props> = ({ items, className }) => {
           />
         ))}
       </ul>
-    </section>
+    </article>
   );
 };
