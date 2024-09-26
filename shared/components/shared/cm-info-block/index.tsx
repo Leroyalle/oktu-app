@@ -6,12 +6,14 @@ import { ItemsWithTitle } from '../items-with-title';
 import { collegialCmData } from '@/shared/constants/collegial-cm';
 import { addressBuildingData as addressData, filesData } from '../../../constants';
 import { FilesBlock } from '../files-block';
+import { File } from '@prisma/client';
 
 interface Props {
+  files: File[];
   className?: string;
 }
 
-export const CmInfoBlock: React.FC<Props> = ({ className }) => {
+export const CmInfoBlock: React.FC<Props> = ({ files, className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <Paragraph
@@ -25,10 +27,10 @@ export const CmInfoBlock: React.FC<Props> = ({ className }) => {
         № 34 л/с."
       />
 
-      <ItemsWithTitle title={'Коллегиальные органы управления'} items={collegialCmData} />
+      <ItemsWithTitle title={'Коллегиальные органы управления:'} items={collegialCmData} />
       <ItemsWithTitle title={'Отделения и корпуса колледжа:'} items={addressData} />
       <div className="mt-4">
-        <FilesBlock items={filesData.cm} />
+        <FilesBlock items={files} />
       </div>
     </section>
   );

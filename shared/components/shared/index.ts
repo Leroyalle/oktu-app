@@ -23,6 +23,17 @@ export { ContactsBlock } from './contacts-block';
 export { DirectionTable } from './direction-table';
 export { SimilarLinks } from './similar-links';
 export { TechStaffTable } from './tech-staff-table';
-export { CommonBlockInfo } from './common-block-info';
+export { CommonInfoBlock } from './common-info-block';
 export { CmInfoBlock } from './cm-info-block';
+export { EducationInfoBlock } from './education-info-block';
+export { DocsInfoBlock } from './docs-info-block';
+export { ObjectsInfoBlock } from './objects-info-block';
+export { EnvInfoBlock } from './env-info-block';
+export { PaidEducationInfoBlock } from './paid-education-info-block';
+export { BudgetInfoBlock } from './budget-info-block';
+export { VacantInfoBlock } from './vacant-info-block';
+export { SupportInfoBlock } from './support-info-block';
+export { InternationalInfoBlock } from './international-info-block';
+export { FeedingInfoBlock } from './feeding-info-block';
+export { StandardInfoBlock } from './standard-info-block';
 // TODO: экспортировать только то что используется на страницах

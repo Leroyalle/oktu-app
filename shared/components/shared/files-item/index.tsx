@@ -11,8 +11,14 @@ interface Props {
 
 export const FilesItem: React.FC<Props> = ({ name, href, iconUrl, className }) => {
   return (
-    <a href={href} download title="Скачать" className={cn(styles.root, className)}>
-      <img src={iconUrl} /> {name}
+    <a
+      download={name}
+      href={href}
+      title="Скачать"
+      rel="noopener noreferrer"
+      target="_blank"
+      className={cn(styles.root, className)}>
+      <img src={iconUrl} /> <span>{name.length > 100 ? name.substring(0, 100) + '...' : name}</span>
     </a>
   );
 };

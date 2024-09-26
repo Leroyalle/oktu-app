@@ -1,0 +1,30 @@
+.root {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-weight: 600;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .head {
+      font-weight: 900;
+    }
+    .row {
+      padding: 0.9375rem 1.875rem;
+      border-width: 1px 0 1px 0;
+      border-color: #dbdee7;
+      border-style: solid;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      span {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.colored {
+  background-color: #d5e2ef;
+}

@@ -403,6 +403,361 @@ async function up() {
     ],
   });
 
+  await prisma.file.createMany({
+    data: [
+      {
+        name: 'Программа модернизации ОКТУ на 2018-2024 гг',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 0,
+      },
+      {
+        name: 'Программа профессионального воспитания и социализации обучающихся на 2019-2022 гг.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 0,
+      },
+      {
+        name: 'Программа профессионального воспитания и социализации обучающихся на 2019-2023 гг.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 0,
+      },
+      {
+        name: 'Положение о порядке оказания платных образовательных услуг',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 0,
+      },
+      {
+        name: 'Публичный отчет за 2023 г.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 0,
+      },
+      {
+        name: 'Основные сведения',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 1,
+      },
+      {
+        name: 'Положение об учебной части ОКТУ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 2,
+      },
+      {
+        name: 'Положение о хозяйственной части ОКТУ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 2,
+      },
+      {
+        name: 'Положение о ресурсном центре ОКТУ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 2,
+      },
+      {
+        name: 'Положение о библиотеке ОКТУ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 2,
+      },
+      {
+        name: 'Положение об архиве ОКТУ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 2,
+      },
+      {
+        name: 'Правила внутреннего распорядка обучающихся',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 3,
+      },
+      {
+        name: 'Правила внутреннего трудового распорядка работников',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 3,
+      },
+      {
+        name: 'Коллективный договор. Дополнение к коллективному договору 2024',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 3,
+      },
+      {
+        name: 'Отчет о результатах самообследования за 2023 год',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 3,
+      },
+      {
+        name: 'Календарный план воспитательной работы',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 3,
+      },
+      {
+        name: 'Программа воспитания 2023 г.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 4,
+      },
+      {
+        name: 'Календарный план воспитательной работы',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 4,
+      },
+      {
+        name: 'Численность обучающихся за счет бюджетных ассигнований на 01 декабря 2023 года',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 4,
+      },
+      {
+        name: 'Количество мест для перевода в 2023-2024 уч.году',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 4,
+      },
+      {
+        name: 'Результаты приема абитуриентов в 2023 году',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 4,
+      },
+      {
+        name: 'Оснащенность аудиторий',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 5,
+      },
+      {
+        name: 'Информация об условиях питания, в том числе для лиц с ОВЗ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Информация о наличии специальных технических средств обучения коллективного и индивидуального пользования для инвалидов и лиц с ОВЗ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Информация об электронных образовательных ресурсах, к которым обеспечивается доступ обучающихся, в том числе приспособленных для использования инвалидами и лицами с ОВЗ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Информация об условиях охраны здоровья обучающихся, в том числе инвалидов и лиц с ОВЗ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Информация о доступе к информационным системам и информационным телекоммуникационным сетям, в том числе приспособленным для использования инвалидами и лицами с ОВЗ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Подключение к ЭБС',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 6,
+      },
+      {
+        name: 'Договор на оказание платных образовательных услуг (СПО)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Договор на оказание платных образовательных услуг (ДПО)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Договор на оказание платных образовательных услуг (ПО)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Договор на оказание платных услуг с несовершеннолетними обучающимися (ПО)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Калькуляции платных образовательных услуг',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Калькуляция затрат по профессии 16675 Повар (профессиональная подготовка)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 7,
+      },
+      {
+        name: 'Финансово-хозяйственная деятельность',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 8,
+      },
+      {
+        name: 'План финансово хозяйственной деятельности на 2022 год',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 8,
+      },
+      {
+        name: 'Отчет об исполнении государственного задания за 2021 г.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 8,
+      },
+      {
+        name: 'Госзадание на 2022 год и плановый период 2023 и 2024 гг.',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 8,
+      },
+      {
+        name: 'Численность студентов ГАПОУ КО "ОКТУ", обучающихся по программам СПО',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 9,
+      },
+      {
+        name: 'Вакантные места по программам СПО',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 9,
+      },
+      {
+        name: 'Положение о порядке назначения и выплаты государственной академической и социальной стипендии',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 10,
+      },
+      {
+        name: 'Приказ о внесении изменений от 26.09.2023 г №784',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 10,
+      },
+      {
+        name: 'Положение о стипендиальной комиссии',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 10,
+      },
+      {
+        name: 'Заключенный  договор с  Профессиональным Лицеем Гостиничного и Ресторанного дела и Питания им. Жана Монз в Лиможе (Франция), в лице его Провизора господина Филиппа ШАДЕЛА',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 11,
+      },
+      {
+        name: 'Организация питания в образовательной организации',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 12,
+      },
+      {
+        name: '08.02.01 Строительство и эксплуатация зданий и сооружений',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '07.02.01 Архитектура',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '35.02.12 Садово-парковое и ландшафтное строительство',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.07 Монтаж и эксплуатация внутренних сантехнических устройств, кондиционирования воздуха и вентиляции',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.08 Монтаж и эксплуатация оборудования и систем газоснабжения',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.04 Водоснабжение и водоотведение',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.01.25 Мастер отделочных строительных и декоративных работ',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '35.02.12 Садово-парковое и ландшафтное строительство 2022 г',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.01.28 Мастер отделочных строительных и декоративных работ 2022 г',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '54.01.20 Графический дизайнер',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.14 Эксплуатация и обслуживание многоквартирного дома',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.15 Информационное моделирование в строительстве',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '07.02.01 Архитектура 2023 г',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '54.02.01 Дизайн (по отраслям)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.04 Водоснабжение и водоотведение (2023)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '08.02.13 Монтаж и эксплуатация внутрених сантехнических устройств, кондиционирования воздуха и вентиляции',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+      {
+        name: '07.02.01 Архитектура (2014)',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 13,
+      },
+    ],
+  });
+
+  await prisma.paidEducation.createMany({
+    data: [
+      {
+        department: 'Повар',
+        duration: '4 месяца',
+        making: '2-3 разряд',
+        price: 18000,
+        comment: 'Начало занятий 01.10.22г.',
+      },
+      {
+        department: 'Повар',
+        duration: '1 месяц',
+        making: '3-4 разряд',
+        price: 0,
+        comment: 'По проекту «Содействие занятости», прием через ЦЗН',
+      },
+      {
+        department: 'Официант',
+        duration: '1 месяц',
+        making: '3 разряд',
+        price: 0,
+        comment: 'По проекту «Содействие занятости», прием через ЦЗН',
+      },
+      {
+        department: 'Бармен',
+        duration: '1 месяц',
+        making: '3 разряд',
+        price: 0,
+        comment: 'По проекту «Содействие занятости», прием через ЦЗН',
+      },
+      {
+        department: 'Сварщик ручной дуговой сварки плавящимся покрытым электродом',
+        duration: '3,5 месяца',
+        making: '3 разряд',
+        price: 30000,
+        comment: 'Тел. 8(48439)67321 Кочеватова Юлия Александровна',
+      },
+    ],
+  });
+
   await prisma.link.createMany({
     data: [
       {
@@ -439,6 +794,8 @@ async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "ImageItem" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "Direction" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "TeachStaff" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "File" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "PaidEducation" RESTART IDENTITY CASCADE`;
 }
 async function main() {
   try {

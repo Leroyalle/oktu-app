@@ -1,7 +1,6 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './SimilarLinks.module.scss';
-import { Title } from '../title';
 
 interface Props {
   items: {

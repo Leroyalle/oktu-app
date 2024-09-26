@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+  }
+}

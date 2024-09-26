@@ -58,11 +58,11 @@ export const navigationData = {
         },
         {
           name: 'Доступная среда.',
-          href: '/structure/accessible-env',
+          href: '/structure/env',
         },
         {
           name: 'Платные образовательные услуги',
-          href: '/structure/paid_education',
+          href: '/structure/paid-education',
         },
         {
           name: 'Финансово-хозяйственная деятельность',
@@ -70,7 +70,7 @@ export const navigationData = {
         },
         {
           name: 'Вакантные места для приема (перевода) обучающихся',
-          href: '/structure/vacancies',
+          href: '/structure/vacant',
         },
         {
           name: 'Стипендии и меры поддержки обучающихся',

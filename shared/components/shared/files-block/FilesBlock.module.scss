@@ -1,6 +1,11 @@
 .root {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
   ul {
     li {
       width: fit-content;

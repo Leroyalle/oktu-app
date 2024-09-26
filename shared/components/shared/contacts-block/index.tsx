@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './ContactsBlock.module.scss';
-import { ContactsInfoItem as RowInfo } from '../contacts-info-item';
+import { TextOrLinkWithStrong as RowInfo } from '../text-or-link-with-strong';
 import { ItemsWithTitle as Address } from '../items-with-title';
 import { addressBuildingData as addressData } from '../../../constants';
 
@@ -27,10 +27,9 @@ export const ContactsBlock: React.FC<Props> = ({ className }) => {
       <RowInfo
         title={'Адрес электронной почты:'}
         text={'ksl299@yandex.ru'}
-        isLink={true}
         href={'mailto:ksl299@yandex.ru'}
       />
-      <Address text={'Адреса отделений ОКТУ:'} items={addressData} />
+      <Address title={'Адреса отделений ОКТУ:'} items={addressData} />
       {/* TODO: вопрос-ответ как добраться с яндекс картой */}
     </section>
   );

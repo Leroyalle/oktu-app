@@ -1,20 +1,21 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
-import styles from './CommonBlockInfo.module.scss';
+import styles from './CommonInfoBlock.module.scss';
 import { Paragraph } from '../paragraph';
-import { ContactsInfoItem as InfoItem } from '../contacts-info-item';
+import { TextOrLinkWithStrong as InfoItem } from '../text-or-link-with-strong';
 import { ItemsWithTitle } from '../items-with-title';
 import { addressBuildingData as addressData } from '../../../constants';
 import { chartData } from '@/shared/constants/chart';
 import { FilesBlock } from '../files-block';
 import { filesData } from '../../../constants';
-import { Title } from '../title';
+import { File } from '@prisma/client';
 
 interface Props {
+  files: File[];
   className?: string;
 }
 
-export const CommonBlockInfo: React.FC<Props> = ({ className }) => {
+export const CommonInfoBlock: React.FC<Props> = ({ files, className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <Paragraph
@@ -41,7 +42,6 @@ export const CommonBlockInfo: React.FC<Props> = ({ className }) => {
       <InfoItem
         title={'Адрес электронной почты:'}
         text={'ksl299@yandex.ru'}
-        isLink={true}
         href={'mailto:ksl299@yandex.ru'}
       />
       <ItemsWithTitle
@@ -51,7 +51,7 @@ export const CommonBlockInfo: React.FC<Props> = ({ className }) => {
       <ItemsWithTitle title={'График работы всех отделений:'} items={chartData} />
 
       <div className="mt-4">
-        <FilesBlock items={filesData.common} />
+        <FilesBlock items={files} />
       </div>
     </section>
   );
