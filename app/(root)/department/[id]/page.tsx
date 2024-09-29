@@ -1,5 +1,5 @@
 import { prisma } from '@/prisma/prisma-client';
-import { Container, Title } from '@/shared/components/shared';
+import { ContactUs, Container, DepartmentWrapper } from '@/shared/components/shared';
 import { notFound } from 'next/navigation';
 
 export default async function Department({ params: { id } }: { params: { id: number } }) {
@@ -11,13 +11,14 @@ export default async function Department({ params: { id } }: { params: { id: num
       departmentItem: true,
     },
   });
-  if (!data) {
+  if (!data || !data.departmentItem) {
     return notFound();
   }
   return (
     // TODO: добавпить кнопку вернуться назад
     <Container>
-      <Title text={data.name} size="2xl" className={'mt-4 mb-12'} />
+      <DepartmentWrapper item={data} />
+      <ContactUs name={data.name} />
     </Container>
   );
 }

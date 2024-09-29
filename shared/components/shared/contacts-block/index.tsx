@@ -23,7 +23,7 @@ export const ContactsBlock: React.FC<Props> = ({ className }) => {
         text={'249032, Калужская область, город Обнинск, ул Курчатова, д. 39'}
       />
       <RowInfo title={'Руководитель:'} text={'Лаптева Ксения Николаевна'} />
-      <RowInfo title={'Факс:'} text={'+7 (484) 396-01-67'} />
+      <RowInfo title={'Факс:'} text={'+7 (484) 396-01-67'} href={'tel:74843960167'} />
       <RowInfo
         title={'Адрес электронной почты:'}
         text={'ksl299@yandex.ru'}

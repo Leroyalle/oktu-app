@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1300px;
+  p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+.root {
+  cursor: pointer;
+  width: 100%;
+  padding: 5px 0;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    transition: background 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    &:active {
+      background-color: rgb(26, 26, 202);
+    }
+    .icon {
+      transition: all 150ms ease-in-out;
+    }
+    .isOpenedIcon {
+      rotate: 180deg;
+    }
+  }
+  .links {
+    transition: height 250ms ease-in-out;
+    visibility: hidden;
+    padding: 0;
+    li {
+      display: flex;
+      align-items: center;
+      height: 0;
+      padding: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      a {
+        transition: background 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+        &:active {
+          background-color: rgb(26, 26, 202);
+        }
+      }
+    }
+  }
+  .isOpened {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    visibility: visible;
+    padding: 5px 25px;
+
+    li {
+      padding: 25px 0;
+      height: 2em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1),
+        padding 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  }
+}

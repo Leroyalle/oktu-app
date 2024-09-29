@@ -15,9 +15,9 @@ export const ContactsTableItem: React.FC<Props> = ({ role, fullName, phone, emai
       <td>{fullName}</td>
       {phone && email && (
         <>
-          <td>+{phone}</td>
+          <td>{'+' + phone || ''}</td>
           <td>
-            <a href={`mailto:${email}`}>{email}</a>
+            <a href={`mailto:${email}`}>{'+' + email || ''}</a>
           </td>
         </>
       )}

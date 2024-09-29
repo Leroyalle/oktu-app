@@ -17,4 +17,13 @@
       }
     }
   }
+  @media (width <= 768px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        padding: 10px;
+      }
+    }
+  }
 }

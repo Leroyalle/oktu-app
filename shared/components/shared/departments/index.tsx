@@ -18,9 +18,12 @@ interface Props {
 }
 
 export const Departments: React.FC<Props> = ({ items, className }) => {
+  if (items.length === 0) {
+    return;
+  }
   return (
     <section className={cn(styles.root, className)}>
-      <Title text={'Факультеты'} size={'xl'} className="mb-8" />
+      <Title text={'Факультеты'} size={'xl'} className="mb-8 ml-[10px]" />
       {/* FIXME: пофиксть фулл баг слайдер */}
       <Swiper
         className={styles.swiper}
@@ -38,7 +41,7 @@ export const Departments: React.FC<Props> = ({ items, className }) => {
             slidesPerGroup: 1,
             grid: { rows: 2, fill: 'row' },
           },
-          900: {
+          1100: {
             spaceBetween: 30,
             slidesPerView: 3,
             slidesPerGroup: 2,

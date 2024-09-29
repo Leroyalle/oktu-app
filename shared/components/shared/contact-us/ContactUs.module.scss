@@ -1,0 +1,16 @@
+.root {
+  padding: 0 10px;
+  margin-bottom: 30px;
+  ul {
+    margin: 5px 0;
+    font-size: 20px;
+    li {
+      a {
+        color: blue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

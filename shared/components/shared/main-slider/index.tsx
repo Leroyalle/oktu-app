@@ -5,26 +5,29 @@ import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { MainSliderItem } from '../main-slider-item';
-import { Link, MainSliderData } from '@prisma/client';
 import { MainSliderDataWithRelations } from '@/@types/dataDTO';
-// TODO: отрефакторить и
+import styles from './MainSlider.module.scss';
 
 interface Props {
   items: MainSliderDataWithRelations[];
   className?: string;
 }
 export const MainSlider: React.FC<Props> = ({ items, className }) => {
+  if (items.length === 0) {
+    return;
+  }
   return (
     <Swiper
       loop={true}
-      spaceBetween={10}
+      spaceBetween={0}
       slidesPerView={1}
-      autoplay={{
-        delay: 5500,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 5500,
+      //   disableOnInteraction: false,
+      // }}
       navigation
-      modules={[FreeMode, Navigation, Thumbs, Autoplay]}>
+      modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+      className={styles.root}>
       {items?.map((item, i) => (
         <SwiperSlide key={i}>
           <MainSliderItem

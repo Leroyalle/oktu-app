@@ -1,12 +1,5 @@
-.root {
-  .wrapper {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-}
 .slide {
   border-radius: 20px !important;
+  padding: 10px;
+  margin-top: 0 !important;
 }

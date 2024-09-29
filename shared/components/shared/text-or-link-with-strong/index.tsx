@@ -12,7 +12,9 @@ interface Props {
 export const TextOrLinkWithStrong: React.FC<Props> = ({ title, text, href, className }) => {
   return (
     <div className={cn(styles.root, className)}>
-      <strong>{title}</strong> {href ? <a href={href}>{text}</a> : text}
+      <p>
+        <strong>{title}</strong> {href ? <a href={href}>{text}</a> : text}
+      </p>
     </div>
   );
 };

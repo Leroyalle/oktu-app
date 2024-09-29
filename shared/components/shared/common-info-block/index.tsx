@@ -38,7 +38,7 @@ export const CommonInfoBlock: React.FC<Props> = ({ files, className }) => {
         text={'249032, Калужская область, город Обнинск, ул Курчатова, д. 39'}
       />
       <InfoItem title={'Руководитель:'} text={'Лаптева Ксения Николаевна'} />
-      <InfoItem title={'Факс:'} text={'+7 (484) 396-01-67'} />
+      <InfoItem title={'Факс:'} text={'+7(484) 396-01-67'} href={'tel:213123123'} />
       <InfoItem
         title={'Адрес электронной почты:'}
         text={'ksl299@yandex.ru'}

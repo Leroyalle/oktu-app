@@ -2,7 +2,6 @@ import React from 'react';
 import { useGalleryStore } from '../store';
 import { useInView } from 'react-intersection-observer';
 import { Api } from '../services/api-client';
-import { Image, ImageItem } from '@prisma/client';
 import { ImageWithItems } from '@/@types/dataDTO';
 
 interface ReturnProps {

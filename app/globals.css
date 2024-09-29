@@ -88,3 +88,27 @@
   background: hsl(var(--primary));
   opacity: 0.8;
 }
+
+.pageTitle {
+  @media (width <= 768px) {
+    font-size: 35px;
+  }
+}
+.pageSubtitle {
+  @media (width <= 768px) {
+    font-size: 25px;
+  }
+}
+
+.showMobile {
+  display: none;
+  @media (width <=1100px) {
+    display: block;
+  }
+}
+.showDesktop {
+  display: block;
+  @media (width <= 1100px) {
+    display: none;
+  }
+}

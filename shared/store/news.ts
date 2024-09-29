@@ -41,6 +41,7 @@ export const useNewsStore = create<Store>()((set) => ({
       set({ loading: false });
     }
   },
+  // FIXME: пофиксить прокрутку
   resetStore: () => {
     set({
       items: [],

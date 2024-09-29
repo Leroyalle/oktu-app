@@ -1,10 +1,6 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
-import {
-  TNavigation,
-  TNavigationDataBottom,
-  TNavigationDataTop,
-} from '@/shared/constants/navigation';
+import { TNavigationDataBottom, TNavigationDataTop } from '@/shared/constants/navigation';
 import { NavItem } from '../nav-item';
 import styles from './NavBar.module.scss';
 

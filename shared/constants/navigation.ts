@@ -33,8 +33,8 @@ export const navigationData = {
   ],
   bottom: [
     {
-      name: 'Сведения об общеобразовательной организации',
-      href: '/information',
+      name: 'Сведения об образовательной организации',
+      href: '/structure',
       links: [
         {
           name: 'Основные сведения',
@@ -149,13 +149,13 @@ export const navigationData = {
   ],
   footerInfo: [
     {
-      name: 'Сведения об общеобразовательной организации',
-      href: '/information',
+      name: 'Сведения об образовательной организации',
+      href: '/structure',
       links: [],
     },
     {
       name: 'Стипендии и меры поддержки обучающихся',
-      href: '/structure/teach-staff',
+      href: '/structure/support',
       links: [],
     },
   ],
@@ -182,7 +182,7 @@ export const navigationData = {
     },
     {
       name: 'Руководство',
-      href: '/structure/teach-staff',
+      href: '/structure/direction',
       links: [],
     },
     {
@@ -206,6 +206,118 @@ export const navigationData = {
       links: [],
     },
   ],
+
+  mobile: [
+    {
+      name: 'Сведения об организации',
+      links: [
+        {
+          name: 'Основные сведения',
+          href: '/structure/common',
+        },
+        {
+          name: 'Структура и органы управления',
+          href: '/structure/cm',
+        },
+        {
+          name: 'Документы',
+          href: '/structure/docs',
+        },
+        {
+          name: 'Образование',
+          href: '/structure/education',
+        },
+        {
+          name: 'Обеспечение и оснащенность',
+          href: '/structure/objects',
+        },
+        {
+          name: 'Доступная среда.',
+          href: '/structure/env',
+        },
+        {
+          name: 'Платные образовательные услуги',
+          href: '/structure/paid-education',
+        },
+        {
+          name: 'Финансово-хозяйственная деятельность',
+          href: '/structure/budget',
+        },
+        {
+          name: 'Вакантные места',
+          href: '/structure/vacant',
+        },
+        {
+          name: 'Меры поддержки обучающихся',
+          href: '/structure/support',
+        },
+        {
+          name: 'Международное сотрудничество',
+          href: '/structure/international',
+        },
+        {
+          name: 'Организация питания',
+          href: '/structure/feeding',
+        },
+        {
+          name: 'Стандарты и требования',
+          href: '/structure/standard',
+        },
+      ],
+    },
+    {
+      name: 'Медиа',
+      links: [
+        {
+          name: 'Новости',
+          href: '/news',
+        },
+        {
+          name: 'Галарея',
+          href: '/gallery',
+        },
+      ],
+    },
+    {
+      name: 'Студенту',
+      links: [
+        {
+          name: 'Объявления',
+          href: '/news',
+        },
+        {
+          name: 'Трудоустройство',
+          href: '/gallery',
+        },
+      ],
+    },
+    {
+      name: 'Абитуриенту',
+      links: [
+        {
+          name: 'Объявления',
+          href: '/news',
+        },
+        {
+          name: 'Трудоустройство',
+          href: '/gallery',
+        },
+      ],
+    },
+    {
+      name: 'Педагогам',
+      links: [
+        {
+          name: 'Объявления',
+          href: '/news',
+        },
+        {
+          name: 'Трудоустройство',
+          href: '/gallery',
+        },
+      ],
+    },
+  ],
 };
 
 export type TNavigation = typeof navigationData;
@@ -213,3 +325,4 @@ export type TNavigationDataTop = typeof navigationData.top;
 export type TNavigationDataBottom = typeof navigationData.bottom;
 export type TNavigationDataInfo = typeof navigationData.footerInfo;
 export type TNavigationDataFooterNav = typeof navigationData.footerNav;
+export type TNavigationDataMobile = typeof navigationData.mobile;

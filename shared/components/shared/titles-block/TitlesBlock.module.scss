@@ -5,4 +5,18 @@
     flex-wrap: wrap;
     align-items: center;
   }
+  @media (width <= 1200px) {
+    padding: 0 55px;
+  }
+  @media (width <= 1000px) {
+    ul {
+      flex-direction: column;
+      li {
+        width: 100%;
+      }
+    }
+  }
+  @media (width <= 768px) {
+    padding: 0 10px;
+  }
 }

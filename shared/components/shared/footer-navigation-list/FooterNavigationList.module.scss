@@ -1,4 +1,7 @@
 .root {
+  @media (width <= 800px) {
+    order: -1;
+  }
   ul {
     display: grid;
     justify-content: start;

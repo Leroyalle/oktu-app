@@ -36,4 +36,8 @@ export { SupportInfoBlock } from './support-info-block';
 export { InternationalInfoBlock } from './international-info-block';
 export { FeedingInfoBlock } from './feeding-info-block';
 export { StandardInfoBlock } from './standard-info-block';
+export { PostWrapper } from './post-wrapper';
+export { DepartmentWrapper } from './department-wrapper';
+export { ContactUs } from './contact-us';
+export { PostNotFound } from './post-not-found';
 // TODO: экспортировать только то что используется на страницах
