@@ -3,19 +3,21 @@ import { create } from 'zustand';
 import { Api } from '../services/api-client';
 interface Store {
   items: Post[];
-  totalCount: number;
+  totalPages: number;
+  page: number;
   skip: number;
   loading: boolean;
   error: boolean;
   setItems: (data: Post[], count: number) => void;
   setSkip: (length: number) => void;
-  fetchItems: VoidFunction;
+  fetchItems: (params: string) => void;
   resetStore: VoidFunction;
 }
 
 export const useNewsStore = create<Store>()((set) => ({
   items: [],
-  totalCount: 0,
+  totalPages: 1,
+  page: 1,
   skip: 0,
   loading: true,
   error: false,
@@ -25,13 +27,13 @@ export const useNewsStore = create<Store>()((set) => ({
   setSkip: (length) => {
     set((prev) => ({ skip: prev.skip + length }));
   },
-  fetchItems: async () => {
+  fetchItems: async (params: string) => {
     try {
       set({ loading: true, error: false });
-      const data = await Api.post.getAll('skip=0&take=6');
+      const data = await Api.post.getAll(params);
       set((prev) => ({
         items: data.posts,
-        totalCount: data.totalCount,
+        totalPages: data.totalPages,
         skip: prev.skip + 6,
       }));
     } catch (error) {
@@ -41,14 +43,13 @@ export const useNewsStore = create<Store>()((set) => ({
       set({ loading: false });
     }
   },
-  // FIXME: пофиксить прокрутку
   resetStore: () => {
-    set({
-      items: [],
-      totalCount: 0,
-      skip: 0,
-      loading: true,
-      error: false,
-    });
+    // set({
+    //   items: [],
+    //   totalCount: 0,
+    //   skip: 0,
+    //   loading: true,
+    //   error: false,
+    // });
   },
 }));

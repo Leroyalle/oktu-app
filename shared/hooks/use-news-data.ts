@@ -1,53 +1,62 @@
+'use client';
 import React from 'react';
 import { useNewsStore } from '../store';
 import { Post } from '@prisma/client';
-import { useInView } from 'react-intersection-observer';
 import { Api } from '../services/api-client';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 interface ReturnProps {
-  newsStore: {
-    items: Post[];
-    totalCount: number;
-    skip: number;
-    loading: boolean;
-    error: boolean;
-    setItems: (data: Post[], count: number) => void;
-    setSkip: (length: number) => void;
-    fetchItems: VoidFunction;
-    resetStore: VoidFunction;
-  };
-  ref: (node?: Element | null) => void;
+  items: Post[];
+  totalPages: number;
+  skip: number;
+  loading: boolean;
+  error: boolean;
+  setItems: (data: Post[], count: number) => void;
+  setSkip: (length: number) => void;
+  fetchItems: VoidFunction;
+  resetStore: VoidFunction;
 }
 
-export const useNewsData = (): ReturnProps => {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-
+export const useNewsData = () => {
+  const searchParams = useSearchParams();
   const newsStore = useNewsStore();
+  const router = useRouter();
+  const isMounted = React.useRef(false);
 
-  React.useEffect(() => {
-    newsStore.fetchItems();
-    return () => newsStore.resetStore();
-  }, []);
+  const [page, setPage] = React.useState(
+    searchParams.has('page') ? Number(searchParams.get('page')) : 1,
+  );
 
-  React.useEffect(() => {
-    if (inView && newsStore.items.length < newsStore.totalCount) {
-      (async function () {
-        try {
-          const data = await Api.post.getAll(`skip=${newsStore.skip}&take=6`);
-          newsStore.setItems(data.posts, data.totalCount);
-          newsStore.setSkip(6);
-        } catch (error) {
-          console.log('Error [MORE-NEWS_GET]', error);
-          throw error;
-        }
-      })();
-    }
-  }, [inView]);
+  const perPage = searchParams.has('perPage') ? Number(searchParams.get('perPage')) : 6;
+  const offset = (page - 1) * perPage;
 
-  return {
-    newsStore,
-    ref,
+  const onChangePage = (value: 'plus' | 'minus') => {
+    value === 'plus' ? setPage((prev) => prev + 1) : setPage((prev) => prev - 1);
   };
+  const [disabled, setDisabled] = React.useState(page >= newsStore.totalPages);
+  console.log(disabled);
+  React.useEffect(() => {
+    console.log(page);
+    router.push(`?page=${page}&perPage=${perPage}`);
+  }, [page]);
+
+  React.useEffect(() => {
+    try {
+      if (isMounted.current) {
+        if (page <= newsStore.totalPages) {
+          newsStore.fetchItems(`skip=${offset}&take=${perPage}`);
+          setDisabled(false);
+        } else {
+          setDisabled(true);
+        }
+      } else {
+        newsStore.fetchItems(`skip=${offset}&take=${perPage}`);
+        isMounted.current = true;
+      }
+    } catch (error) {
+      throw error;
+    }
+  }, [page]);
+
+  return { newsStore, onChangePage, page };
 };

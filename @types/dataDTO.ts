@@ -18,7 +18,7 @@ export type QuoteWithRelations = Quote & {
 };
 export interface PostDTO {
   posts: Post[];
-  totalCount: number;
+  totalPages: number;
 }
 export type ImageWithRelations = {
   images: (Image & { imageItem: ImageItem[] })[];

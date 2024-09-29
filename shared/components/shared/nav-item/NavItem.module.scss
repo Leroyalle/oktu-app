@@ -21,17 +21,16 @@
   .links {
     max-height: 500px;
     overflow-y: auto;
+    overscroll-behavior: none;
     z-index: 100;
     background-color: #1c0476;
     transition: all 150ms ease-in-out;
-    // visibility: hidden;
     display: flex;
     color: white;
     padding: 20px;
     position: absolute;
     top: 40px;
     left: 0;
-    // ! justify-content: center;
     flex-direction: column;
     row-gap: 20px;
   }
@@ -46,7 +45,6 @@
     }
   }
   .visible {
-    // visibility: visible;
     display: block !important;
     opacity: 1;
   }

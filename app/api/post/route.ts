@@ -15,5 +15,6 @@ export async function GET(req: NextRequest) {
     prisma.post.count(),
   ]);
 
-  return NextResponse.json({ posts, totalCount });
+  const totalPages = Math.ceil(totalCount / Number(take));
+  return NextResponse.json({ posts, totalPages });
 }

@@ -7,14 +7,17 @@ import { useNewsData } from '@/shared/hooks';
 import { useInView } from 'react-intersection-observer';
 import { Api } from '@/shared/services/api-client';
 import { useNewsStore } from '@/shared/store';
-import { Skeleton } from '../../ui';
+import { Button, Skeleton } from '../../ui';
+import { useRouter } from 'next/navigation';
+import { PaginationButtons } from '../pagination-buttons';
 
 interface Props {
   className?: string;
 }
 
 export const NewsWrapper: React.FC<Props> = ({ className }) => {
-  const { newsStore, ref } = useNewsData();
+  const router = useRouter();
+  const { newsStore, onChangePage, page } = useNewsData();
 
   if (newsStore.loading) {
     return (
@@ -29,8 +32,12 @@ export const NewsWrapper: React.FC<Props> = ({ className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <NewsSection items={newsStore.items} loading={newsStore.loading} />
-      {/* TODO: анимация при загрузке */}
-      <div ref={ref} />
+
+      <PaginationButtons
+        disabledPrev={page <= 1}
+        disabledNext={page >= newsStore.totalPages}
+        onClick={onChangePage}
+      />
     </section>
   );
 };
