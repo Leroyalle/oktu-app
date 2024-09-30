@@ -8,6 +8,7 @@ import { NavItem } from '../nav-item';
 import { TNavigationDataInfo } from '@/shared/constants/navigation';
 import Link from 'next/link';
 import { FooterInfoBlockHead as Head } from '../footer-info-block-head';
+import { Developer } from '../developer';
 
 interface Props {
   items: TNavigationDataInfo;
@@ -30,6 +31,7 @@ export const FooterInfoBlock: React.FC<Props> = ({ items, className }) => {
           />
         ))}
       </ul>
+      <Developer />
     </div>
   );
 };

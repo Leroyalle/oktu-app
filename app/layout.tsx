@@ -1,6 +1,7 @@
 import './globals.css';
 import { Nunito, Inter } from 'next/font/google';
 import { Providers } from '@/shared/components/shared';
+import Head from 'next/head';
 
 const nunito = Nunito({
   subsets: ['cyrillic'],
@@ -8,7 +9,6 @@ const nunito = Nunito({
   weight: ['400', '500', '600', '700', '800', '900'],
 });
 
-// TODO: добавить метадату в лайаутах
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link data-rh="true" rel="icon" href="/assets/logo.jpg" />
+      </Head>
       <body className={`${nunito.className}`}>
         <Providers>{children}</Providers>
       </body>

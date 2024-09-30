@@ -1,0 +1,19 @@
+.root {
+  a,
+  address {
+    background-image: linear-gradient(135deg, #c179ff, #63b5ff 100%, #63b5ff 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s linear;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    address {
+      font-size: inherit;
+      font-style: inherit;
+      color: inherit;
+    }
+  }
+}

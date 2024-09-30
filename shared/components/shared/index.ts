@@ -45,4 +45,3 @@ export { EnrolleeWrapper } from './enrollee-wrapper';
 export { TeachersWrapper } from './teachers-wrapper';
 export { ParentsWrapper } from './parents-wrapper';
 export { ProfessionalsWrapper } from './professionals-wrapper';
-// TODO: экспортировать только то что используется на страницах

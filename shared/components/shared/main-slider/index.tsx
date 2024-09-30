@@ -21,10 +21,10 @@ export const MainSlider: React.FC<Props> = ({ items, className }) => {
       loop={true}
       spaceBetween={0}
       slidesPerView={1}
-      // autoplay={{
-      //   delay: 5500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 5500,
+        disableOnInteraction: false,
+      }}
       navigation
       modules={[FreeMode, Navigation, Thumbs, Autoplay]}
       className={styles.root}>
