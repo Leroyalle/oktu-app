@@ -2,6 +2,7 @@ import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './BurgerMenuItem.module.scss';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 interface Props {
   item: {
@@ -11,10 +12,11 @@ interface Props {
       href: string;
     }[];
   };
+  onClose: () => void;
   className?: string;
 }
 
-export const BurgerMenuItem: React.FC<Props> = ({ item, className }) => {
+export const BurgerMenuItem: React.FC<Props> = ({ item, onClose, className }) => {
   const [isOpened, setIsOpened] = React.useState(false);
   return (
     <div className={cn(styles.root, className)}>
@@ -25,7 +27,9 @@ export const BurgerMenuItem: React.FC<Props> = ({ item, className }) => {
       <ul className={cn(styles.links, isOpened && styles.isOpened)}>
         {item.links.map(({ name, href }, i) => (
           <li key={i}>
-            <a href={href}>{name}</a>
+            <Link href={href} onClick={onClose}>
+              {name}
+            </Link>
           </li>
         ))}
       </ul>

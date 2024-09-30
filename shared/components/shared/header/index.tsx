@@ -13,10 +13,10 @@ import { VisionModeButton } from '../vision-mode-button';
 
 export const Header: React.FC = () => {
   const visible = useScrollPage();
-  const [isOpened, setIsOpened] = React.useState(false);
+  const [isOpenedBurger, setIsOpenedBurger] = React.useState(false);
 
   return (
-    <header className={cn(styles.header, !visible && !isOpened && styles.goOff)}>
+    <header className={cn(styles.header, !visible && !isOpenedBurger && styles.goOff)}>
       <Container className={styles.wrapper}>
         <div>
           <Logo />
@@ -27,18 +27,24 @@ export const Header: React.FC = () => {
             itemStyles={'text-white hover:text-white/70'}
             className={'showDesktop'}
           />
+
           <VisionModeButton />
+
           <BurgerMenuButton
-            isOpened={isOpened}
-            onClick={() => setIsOpened(!isOpened)}
+            isOpened={isOpenedBurger}
+            onClick={() => setIsOpenedBurger(!isOpenedBurger)}
             className={'showMobile'}
           />
         </div>
       </Container>
       <div className="showMobile">
         <div
-          className={cn(styles.mobile, isOpened && styles.mobileIsOpened, 'burgerBody scrollbar')}>
-          <BurgerMenuBody items={navigationData.mobile} />
+          className={cn(
+            styles.mobile,
+            isOpenedBurger && styles.mobileIsOpened,
+            'burgerBody scrollbar',
+          )}>
+          <BurgerMenuBody items={navigationData.mobile} onClose={() => setIsOpenedBurger(false)} />
         </div>
       </div>
       <div className="showDesktop">

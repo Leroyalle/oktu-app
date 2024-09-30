@@ -11,7 +11,7 @@ export default function NotFound({ className }: Props) {
   return (
     <Container className={cn('flex items-center justify-center', className)}>
       <PageNotFound
-        title={'Кажется, пост еще не написан...😥'}
+        title={'Кажется, описание еще не готово...😥'}
         text={'Скорее всего администрация уже работает над этим'}
       />
     </Container>

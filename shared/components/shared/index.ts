@@ -39,7 +39,7 @@ export { StandardInfoBlock } from './standard-info-block';
 export { PostWrapper } from './post-wrapper';
 export { DepartmentWrapper } from './department-wrapper';
 export { ContactUs } from './contact-us';
-export { PostNotFound } from './post-not-found';
+export { PageNotFound } from './page-not-found';
 export { StudentsWrapper } from './students-wrapper';
 export { EnrolleeWrapper } from './enrollee-wrapper';
 export { TeachersWrapper } from './teachers-wrapper';

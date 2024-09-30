@@ -12,16 +12,16 @@ export const VisionModeButton: React.FC<Props> = ({ className }) => {
   const { isVisionMode, setIsVisionMode, getStateOfStorage } = useVisionModeStore();
 
   React.useEffect(() => {
-    getStateOfStorage(window.localStorage.getItem('name'));
+    getStateOfStorage(window.localStorage.getItem('visible-mode'));
   }, []);
 
   const setVisionModeAndCookies = () => {
     if (!isVisionMode) {
-      window.localStorage.setItem('name', 'true');
+      window.localStorage.setItem('visible-mode', 'true');
       console.log(true);
     } else {
       console.log(false);
-      window.localStorage.setItem('name', 'false');
+      window.localStorage.setItem('visible-mode', 'false');
     }
     setIsVisionMode();
   };

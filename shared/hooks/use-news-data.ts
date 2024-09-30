@@ -39,7 +39,6 @@ export const useNewsData = (): ReturnProps => {
   };
 
   React.useEffect(() => {
-    console.log(page);
     router.push(`?page=${page}&perPage=${perPage}`);
   }, [page]);
 
