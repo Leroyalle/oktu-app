@@ -12,6 +12,9 @@
     align-items: center;
   }
   button {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
     &:active {
       background-color: #1d00c3;
     }

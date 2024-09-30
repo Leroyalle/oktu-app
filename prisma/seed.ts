@@ -793,6 +793,20 @@ async function up() {
       },
     ],
   });
+
+  await prisma.tag.createMany({
+    data: [
+      {
+        name: 'Студентам',
+      },
+      {
+        name: 'Абитуриентам',
+      },
+      {
+        name: 'Педагогам',
+      },
+    ],
+  });
 }
 async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "Department" RESTART IDENTITY CASCADE`;
@@ -809,6 +823,7 @@ async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "TeachStaff" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "File" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "PaidEducation" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "Tag" RESTART IDENTITY CASCADE`;
 }
 async function main() {
   try {

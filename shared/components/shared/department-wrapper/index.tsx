@@ -21,7 +21,7 @@ export const DepartmentWrapper: React.FC<Props> = ({ item, className }) => {
         <Banner imageUrl={item.departmentItem?.bigImageUrl || item.imageUrl} name={item.name} />
       </div>
       <div className={styles.heading}>
-        <Title text={item.name} size={'2xl'} className={styles.title} />
+        <Title text={item.name} size={'2xl'} className={cn(styles.title, 'pageTitle')} />
       </div>
       <div className={styles.inner}>
         <Text textItems={getTextArray(item.departmentItem.topDescription)} />

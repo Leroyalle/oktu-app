@@ -2,6 +2,7 @@ import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './NewsItem.module.scss';
 import Link from 'next/link';
+import { MoveRight } from 'lucide-react';
 
 interface Props {
   id: number;
@@ -23,11 +24,17 @@ export const NewsItem: React.FC<Props> = ({
   return (
     <article className={cn(styles.root, className)}>
       <Link href={`/news/${id}`} className={styles.wrapper}>
-        <img src={imageUrl} alt={name} />
+        <div className={styles.image}>
+          <img src={imageUrl} alt={name} />
+        </div>
         <div className={styles.content}>
           <span className={styles.date}>{new Date(createdAt).toLocaleDateString()}</span>
           <span className={styles.name}>{name}</span>
-          <p>{shortDescription.substring(0, 200) + '...'}</p>
+          <p>
+            {shortDescription.length >= 120
+              ? shortDescription.substring(0, 120) + '...'
+              : shortDescription}
+          </p>
         </div>
       </Link>
     </article>

@@ -86,6 +86,9 @@ model Post {
 
   postItem PostItem?
 
+  tag   Tag? @relation(fields: [tagId], references: [id])
+  tagId Int?
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }
@@ -181,6 +184,16 @@ model PaidEducation {
   making     String
   price      BigInt
   comment    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Tag {
+  id Int @id @default(autoincrement())
+
+  name  String
+  posts Post[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

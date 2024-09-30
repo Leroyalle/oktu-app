@@ -1,43 +1,32 @@
 'use client';
-import React from 'react';
-import { cn } from '@/shared/lib/utils';
-import styles from './NewsWrapper.module.scss';
-import { NewsSection } from '../news-section';
+import React, { Suspense } from 'react';
+import { Tags } from '../tags';
+import { NewsContentWrapper } from '../news-content-wrapper';
+import { Tag } from '@prisma/client';
 import { useNewsData } from '@/shared/hooks';
-import { useInView } from 'react-intersection-observer';
-import { Api } from '@/shared/services/api-client';
-import { useNewsStore } from '@/shared/store';
-import { Button, Skeleton } from '../../ui';
-import { useRouter } from 'next/navigation';
-import { PaginationButtons } from '../pagination-buttons';
+import styles from './NewsWrapper.module.scss';
 
 interface Props {
-  className?: string;
+  tags: Tag[];
 }
 
-export const NewsWrapper: React.FC<Props> = ({ className }) => {
-  const router = useRouter();
-  const { newsStore, onChangePage, page } = useNewsData();
-
-  if (newsStore.loading) {
-    return (
-      <div className={cn(styles.skeletonWrapper, className)}>
-        {...Array(6)
-          .fill(0)
-          .map((_, i) => <Skeleton key={i} className={styles.skeleton} />)}
-      </div>
-    );
-  }
+export const NewsWrapper: React.FC<Props> = ({ tags }) => {
+  const [isShowItems, setIsShowItems] = React.useState(false);
+  const { onChangeTag, tag } = useNewsData();
 
   return (
-    <section className={cn(styles.root, className)}>
-      <NewsSection items={newsStore.items} loading={newsStore.loading} />
-
-      <PaginationButtons
-        disabledPrev={page <= 1}
-        disabledNext={page >= newsStore.totalPages}
-        onClick={onChangePage}
+    <div className={styles.root}>
+      <Tags
+        isShowItems={isShowItems}
+        setIsShowItems={() => setIsShowItems(!isShowItems)}
+        items={tags}
+        currentTagId={tag}
+        onClick={onChangeTag}
+        className="mb-[15px]"
       />
-    </section>
+      <Suspense>
+        <NewsContentWrapper />
+      </Suspense>
+    </div>
   );
 };

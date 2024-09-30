@@ -27,17 +27,5 @@
     .banner {
       max-height: 500px;
     }
-    .heading {
-      .title {
-        font-size: 40px;
-      }
-    }
-  }
-  @media (width <= 500px) {
-    .heading {
-      .title {
-        font-size: 35px;
-      }
-    }
   }
 }

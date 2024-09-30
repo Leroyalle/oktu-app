@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+
+  span {
+    display: block;
+    background-color: rgba(0, 48, 146, 0.04);
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    padding: 1.2ex calc(2.4rem * 0.75);
+    &:hover {
+      background-color: rgba(0, 48, 146, 0.08);
+      color: #d70303;
+    }
+  }
+  .active {
+    background-color: #003092;
+    color: white;
+    &:hover {
+      background-color: #003092;
+      color: white;
+    }
+  }
+  @media (width <= 1100px) {
+    span {
+      padding: 1.2ex calc(1.3rem * 0.75);
+    }
+  }
+}

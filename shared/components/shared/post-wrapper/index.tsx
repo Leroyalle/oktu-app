@@ -21,7 +21,7 @@ export const PostWrapper: React.FC<Props> = ({ item, className }) => {
         <Banner imageUrl={item.postItem?.bigImageUrl || item.imageUrl} name={item.name} />
       </div>
       <div className={styles.heading}>
-        <Title text={item.name} size={'2xl'} className={styles.title} />
+        <Title text={item.name} size={'2xl'} className={cn(styles.title, 'pageTitle')} />
         <span>{new Date(item.createdAt).toLocaleDateString()}</span>
       </div>
       <Text textItems={getTextArray(item.postItem.description)} />

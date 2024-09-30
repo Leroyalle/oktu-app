@@ -17,7 +17,6 @@ export { FooterInfoBlock } from './footer-info-block';
 export { FooterContacts } from './footer-contacts';
 export { FooterContactsItem } from './footer-contacts-item';
 export { FooterInfoBlockHead } from './footer-info-block-head';
-export { NewsWrapper } from './news-wrapper';
 export { GalleryWrapper } from './gallery-wrapper';
 export { ContactsBlock } from './contacts-block';
 export { DirectionTable } from './direction-table';
@@ -40,4 +39,7 @@ export { PostWrapper } from './post-wrapper';
 export { DepartmentWrapper } from './department-wrapper';
 export { ContactUs } from './contact-us';
 export { PostNotFound } from './post-not-found';
+export { StudentsInfoBlock } from './students-info-block';
+export { Tags } from './tags';
+export { NewsWrapper } from './news-wrapper';
 // TODO: экспортировать только то что используется на страницах
