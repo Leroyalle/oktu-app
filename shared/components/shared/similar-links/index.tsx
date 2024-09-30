@@ -12,7 +12,7 @@ interface Props {
 
 export const SimilarLinks: React.FC<Props> = ({ items, className }) => {
   return (
-    <section className={cn(styles.root, className)}>
+    <section className={cn(styles.root, 'similarLinks', className)}>
       <ul>
         {items.map((item, i) => (
           <li key={i}>

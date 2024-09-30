@@ -40,7 +40,7 @@ export const NavItem: React.FC<Props> = ({ name, href, links, itemStyles, classN
   return (
     <li ref={ref} className={cn(styles.navItem, className)}>
       <div className={cn(styles.item, itemStyles)}>
-        {links.length > 0 && <ChevronDown className={styles.icon} />}
+        {links.length > 0 && <ChevronDown className={cn(styles.icon, 'arrowIcon')} />}
         <Link href={`${href}`}>{name}</Link>
       </div>
       {links.length > 0 && (

@@ -9,10 +9,12 @@ import { useScrollPage } from '@/shared/hooks';
 import { cn } from '@/shared/lib/utils';
 import { BurgerMenuButton } from '../burger-menu-button';
 import { BurgerMenuBody } from '../burger-menu-body';
+import { VisionModeButton } from '../vision-mode-button';
 
 export const Header: React.FC = () => {
   const visible = useScrollPage();
   const [isOpened, setIsOpened] = React.useState(false);
+
   return (
     <header className={cn(styles.header, !visible && !isOpened && styles.goOff)}>
       <Container className={styles.wrapper}>
@@ -25,6 +27,7 @@ export const Header: React.FC = () => {
             itemStyles={'text-white hover:text-white/70'}
             className={'showDesktop'}
           />
+          <VisionModeButton />
           <BurgerMenuButton
             isOpened={isOpened}
             onClick={() => setIsOpened(!isOpened)}
@@ -33,12 +36,13 @@ export const Header: React.FC = () => {
         </div>
       </Container>
       <div className="showMobile">
-        <div className={cn(styles.mobile, isOpened && styles.mobileIsOpened, 'scrollbar ')}>
+        <div
+          className={cn(styles.mobile, isOpened && styles.mobileIsOpened, 'burgerBody scrollbar')}>
           <BurgerMenuBody items={navigationData.mobile} />
         </div>
       </div>
       <div className="showDesktop">
-        <div className={styles.navBottom}>
+        <div className={cn(styles.navBottom, 'bg-white')}>
           <NavBar
             items={navigationData.bottom}
             itemStyles={'text-black hover:text-blue-700 pb-[15px]'}

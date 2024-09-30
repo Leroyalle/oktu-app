@@ -113,3 +113,43 @@
     font-size: 35px;
   }
 }
+
+.visionMode {
+  background-color: #1c3f84;
+  main,
+  div,
+  .similarLinks,
+  * {
+    background-color: transparent;
+  }
+  .burgerBody {
+    background-color: rgb(11, 11, 156) !important;
+  }
+  img {
+    background: black !important;
+    border: 1px solid black !important;
+  }
+  p,
+  a,
+  span,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  section,
+  strong,
+  ul,
+  li,
+  .arrowIcon {
+    color: white !important;
+  }
+  button {
+    background: white !important;
+    color: black !important;
+
+    &:hover {
+      background: rgb(58, 58, 58) !important;
+    }
+  }
+}
