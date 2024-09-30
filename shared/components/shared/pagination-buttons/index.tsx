@@ -4,6 +4,8 @@ import { Button } from '../../ui';
 import styles from './PaginationButtons.module.scss';
 
 interface Props {
+  page: number;
+  totalPage: number;
   disabledPrev: boolean;
   disabledNext: boolean;
   onClick: (value: 'plus' | 'minus') => void;
@@ -11,6 +13,8 @@ interface Props {
 }
 
 export const PaginationButtons: React.FC<Props> = ({
+  page,
+  totalPage,
   disabledPrev,
   disabledNext,
   onClick,
@@ -19,10 +23,13 @@ export const PaginationButtons: React.FC<Props> = ({
   return (
     <div className={cn(styles.root, className)}>
       <Button onClick={() => onClick('minus')} disabled={disabledPrev}>
-        Prev Page
+        Предыдущая
       </Button>
+      <p>
+        {page}/{totalPage}
+      </p>
       <Button onClick={() => onClick('plus')} disabled={disabledNext}>
-        Next Page
+        Следующая
       </Button>
     </div>
   );

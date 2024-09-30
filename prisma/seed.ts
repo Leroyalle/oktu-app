@@ -133,7 +133,7 @@ async function up() {
       },
       {
         name: 'Образование',
-        href: '/enrollee',
+        href: '/structure/education',
         imageUrl:
           'https://avatars.dzeninfra.ru/get-zen_doc/4581585/pub_640d6c350c912a32a1938ad7_640d6dbd352af862c44ec20e/scale_1200',
       },
@@ -726,6 +726,56 @@ async function up() {
         href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
         category: 13,
       },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 14,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 14,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 15,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 15,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 16,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 16,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 17,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 17,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 18,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        category: 18,
+      },
     ],
   });
 
@@ -773,12 +823,12 @@ async function up() {
     data: [
       {
         name: 'Основные сведения',
-        href: '/information/common',
+        href: '/structure/common',
         mainSliderDataId: 1,
       },
       {
         name: 'Перейти к профессии',
-        href: '/professions/1',
+        href: '/departments/7',
         mainSliderDataId: 2,
       },
       {
@@ -787,7 +837,7 @@ async function up() {
         mainSliderDataId: 3,
       },
       {
-        name: 'Из рабочего графика',
+        name: 'К новостям',
         href: '/news',
         quoteId: 1,
       },

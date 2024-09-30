@@ -3,7 +3,7 @@ import { navigationData } from '@/shared/constants';
 
 export default async function StructurePage() {
   return (
-    <Container>
+    <Container className="px-[10px]">
       <Title
         text={'Сведения об образовательной организации'}
         size="2xl"

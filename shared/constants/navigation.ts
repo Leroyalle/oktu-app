@@ -96,11 +96,7 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/students/announce',
-        },
-        {
-          name: 'Трудоустройство',
-          href: '/students/work',
+          href: '/news',
         },
       ],
     },
@@ -110,11 +106,7 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/enrollee/announce',
-        },
-        {
-          name: 'Статистика',
-          href: '/enrollee/statistics',
+          href: '/news',
         },
       ],
     },
@@ -124,11 +116,7 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/teachers/announce',
-        },
-        {
-          name: 'Статистика',
-          href: '/teachers/statistics',
+          href: '/news',
         },
       ],
     },
@@ -138,11 +126,7 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/parents/announce',
-        },
-        {
-          name: 'Статистика',
-          href: '/parents/statistics',
+          href: '/news',
         },
       ],
     },
@@ -177,7 +161,7 @@ export const navigationData = {
     },
     {
       name: 'Абитуриентам',
-      href: '/news',
+      href: '/enrollee',
       links: [],
     },
     {
@@ -279,15 +263,28 @@ export const navigationData = {
       ],
     },
     {
+      name: 'Команда',
+      links: [
+        {
+          name: 'Руководство',
+          href: '/structure/direction',
+        },
+        {
+          name: 'Педагогический состав',
+          href: '/structure/teach-staff',
+        },
+      ],
+    },
+    {
       name: 'Студенту',
       links: [
         {
           name: 'Объявления',
-          href: '/news',
+          href: '/students',
         },
         {
-          name: 'Трудоустройство',
-          href: '/gallery',
+          name: 'Новости',
+          href: '/news',
         },
       ],
     },
@@ -296,11 +293,11 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/news',
+          href: '/enrollee',
         },
         {
-          name: 'Трудоустройство',
-          href: '/gallery',
+          name: 'Новости',
+          href: '/news',
         },
       ],
     },
@@ -309,11 +306,20 @@ export const navigationData = {
       links: [
         {
           name: 'Объявления',
-          href: '/news',
+          href: '/teachers',
         },
         {
-          name: 'Трудоустройство',
-          href: '/gallery',
+          name: 'Новости',
+          href: '/news',
+        },
+      ],
+    },
+    {
+      name: 'Профессионалитет',
+      links: [
+        {
+          name: 'Основное',
+          href: '/fp-professionals',
         },
       ],
     },

@@ -13,6 +13,19 @@
       }
     }
   }
+  @media (width <= 900px) {
+    table {
+      tr,
+      td {
+        padding: 5px;
+      }
+    }
+  }
+  @media (width <= 768px) {
+    table {
+      font-size: 12px;
+    }
+  }
 }
 .colored {
   background-color: #d5e2ef;

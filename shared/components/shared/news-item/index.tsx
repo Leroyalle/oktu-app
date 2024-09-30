@@ -23,11 +23,17 @@ export const NewsItem: React.FC<Props> = ({
   return (
     <article className={cn(styles.root, className)}>
       <Link href={`/news/${id}`} className={styles.wrapper}>
-        <img src={imageUrl} alt={name} />
+        <div className={styles.imageWrapper}>
+          <img src={imageUrl} alt={name} />
+        </div>
         <div className={styles.content}>
           <span className={styles.date}>{new Date(createdAt).toLocaleDateString()}</span>
           <span className={styles.name}>{name}</span>
-          <p>{shortDescription.substring(0, 200) + '...'}</p>
+          <p>
+            {shortDescription.length > 120
+              ? shortDescription.substring(0, 120) + '...'
+              : shortDescription}
+          </p>
         </div>
       </Link>
     </article>

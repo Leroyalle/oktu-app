@@ -16,7 +16,6 @@ interface Props {
 }
 
 export const NewsWrapper: React.FC<Props> = ({ className }) => {
-  const router = useRouter();
   const { newsStore, onChangePage, page } = useNewsData();
 
   if (newsStore.loading) {
@@ -33,11 +32,15 @@ export const NewsWrapper: React.FC<Props> = ({ className }) => {
     <section className={cn(styles.root, className)}>
       <NewsSection items={newsStore.items} loading={newsStore.loading} />
 
-      <PaginationButtons
-        disabledPrev={page <= 1}
-        disabledNext={page >= newsStore.totalPages}
-        onClick={onChangePage}
-      />
+      <div className="mt-[50px]">
+        <PaginationButtons
+          disabledPrev={page <= 1}
+          disabledNext={page >= newsStore.totalPages}
+          onClick={onChangePage}
+          page={page}
+          totalPage={newsStore.totalPages}
+        />
+      </div>
     </section>
   );
 };

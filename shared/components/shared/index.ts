@@ -40,4 +40,9 @@ export { PostWrapper } from './post-wrapper';
 export { DepartmentWrapper } from './department-wrapper';
 export { ContactUs } from './contact-us';
 export { PostNotFound } from './post-not-found';
+export { StudentsWrapper } from './students-wrapper';
+export { EnrolleeWrapper } from './enrollee-wrapper';
+export { TeachersWrapper } from './teachers-wrapper';
+export { ParentsWrapper } from './parents-wrapper';
+export { ProfessionalsWrapper } from './professionals-wrapper';
 // TODO: экспортировать только то что используется на страницах
