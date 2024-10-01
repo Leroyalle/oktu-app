@@ -828,7 +828,7 @@ async function up() {
       },
       {
         name: 'Перейти к профессии',
-        href: '/departments/7',
+        href: '/department/7',
         mainSliderDataId: 2,
       },
       {

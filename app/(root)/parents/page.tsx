@@ -2,6 +2,7 @@ import { prisma } from '@/prisma/prisma-client';
 import { Container, SimilarLinks, ParentsWrapper, Title } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
 
+export const revalidate = 360;
 export default async function ParentsPage() {
   const files = await prisma.file.findMany({
     where: {

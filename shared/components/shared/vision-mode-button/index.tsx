@@ -11,8 +11,8 @@ interface Props {
 export const VisionModeButton: React.FC<Props> = ({ className }) => {
   const { isVisionMode, setIsVisionMode, getStateOfStorage } = useVisionModeStore();
 
-  React.useEffect(() => {
-    getStateOfStorage(window.localStorage.getItem('visible-mode'));
+  React.useLayoutEffect(() => {
+    getStateOfStorage(localStorage.getItem('visible-mode'));
   }, []);
 
   const setVisionModeAndCookies = () => {

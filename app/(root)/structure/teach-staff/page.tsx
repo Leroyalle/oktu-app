@@ -2,6 +2,7 @@ import { prisma } from '@/prisma/prisma-client';
 import { Container, Title, SimilarLinks, TechStaffTable } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
 
+export const revalidate = 360;
 export default async function StaffPage() {
   const items = await prisma.teachStaff.findMany();
   return (

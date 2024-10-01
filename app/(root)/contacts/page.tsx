@@ -1,5 +1,6 @@
 import { ContactsBlock, Container, Title } from '@/shared/components/shared';
 
+export const revalidate = 360;
 export default async function ContactsPage() {
   return (
     // TODO: паддинг при уменьшении ширины

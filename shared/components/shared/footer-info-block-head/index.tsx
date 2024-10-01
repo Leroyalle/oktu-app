@@ -11,7 +11,7 @@ interface Props {
 
 export const FooterInfoBlockHead: React.FC<Props> = ({ className }) => {
   return (
-    <div className={styles.root}>
+    <div className={cn(styles.root, className)}>
       <Link href={'/'} title="ОКТУ">
         ОКТУ
       </Link>

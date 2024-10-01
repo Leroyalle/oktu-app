@@ -7,6 +7,7 @@ import {
 } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
 
+export const revalidate = 360;
 export default async function DirectionPage() {
   const items = await prisma.direction.findMany();
   return (

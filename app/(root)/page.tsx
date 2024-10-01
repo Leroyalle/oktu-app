@@ -1,3 +1,4 @@
+import { prisma } from '@/prisma/prisma-client';
 import {
   Container,
   Departments,
@@ -5,13 +6,31 @@ import {
   MainSlider,
   TitlesBlock,
 } from '@/shared/components/shared';
-import { useServerData } from '@/shared/hooks';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 
+export const revalidate = 40;
 export default async function Home() {
-  const { mainSliderData, departments, quote, titles } = await useServerData();
+  const mainSliderData = await prisma.mainSliderData.findMany({
+    include: {
+      link: true,
+    },
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+  const departments = await prisma.department.findMany({
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+  const quote = await prisma.quote.findFirst({
+    include: {
+      link: true,
+    },
+  });
+  const titles = await prisma.titlesSection.findMany();
 
   return (
     <Container>
@@ -25,7 +44,6 @@ export default async function Home() {
       <div className="mt-36 mb-20">
         <TitlesBlock items={titles} />
       </div>
-      {/* <div className="pb-[50%]"/> */}
     </Container>
   );
 }

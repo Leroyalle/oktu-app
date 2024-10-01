@@ -12,7 +12,7 @@ interface Props {
 
 export const FooterContactsItem: React.FC<Props> = ({ name, href, imageUrl, className }) => {
   return (
-    <a href={href} className={cn(styles.root, className)}>
+    <a href={href} className={cn(styles.root, className)} target="_blank">
       <Image src={imageUrl} alt={name} width={40} height={30} title={name} />
     </a>
   );

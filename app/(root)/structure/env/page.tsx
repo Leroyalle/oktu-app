@@ -1,13 +1,8 @@
 import { prisma } from '@/prisma/prisma-client';
-import {
-  Container,
-  Title,
-  SimilarLinks,
-  ObjectsInfoBlock,
-  EnvInfoBlock,
-} from '@/shared/components/shared';
+import { Container, Title, SimilarLinks, EnvInfoBlock } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
 
+export const revalidate = 360;
 export default async function EnvPage() {
   const files = await prisma.file.findMany({
     where: {

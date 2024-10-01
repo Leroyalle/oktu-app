@@ -2,6 +2,7 @@ import { prisma } from '@/prisma/prisma-client';
 import { Container, Title, SimilarLinks, InternationalInfoBlock } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
 
+export const revalidate = 360;
 export default async function InternationalPage() {
   const files = await prisma.file.findMany({
     where: {
