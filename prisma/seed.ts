@@ -109,7 +109,7 @@ async function up() {
         'Мы уже более 100 лет готовим кадры для всевозможных отраслей Калужской области. Сегодня\n' +
         'обучение в техникуме ведётся по семи основным профессиональным образовательным программам\n' +
         'среднего профессионального образования.',
-      imageUrl: 'https://tcek63.ru/local/templates/tcerk63/img/boss.jpg',
+      imageUrl: '/assets/master.jpg',
     },
   });
 
@@ -418,363 +418,418 @@ async function up() {
     data: [
       {
         name: 'Программа модернизации ОКТУ на 2018-2024 гг',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 0,
       },
       {
         name: 'Программа профессионального воспитания и социализации обучающихся на 2019-2022 гг.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 0,
       },
       {
         name: 'Программа профессионального воспитания и социализации обучающихся на 2019-2023 гг.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 0,
       },
       {
         name: 'Положение о порядке оказания платных образовательных услуг',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 0,
       },
       {
         name: 'Публичный отчет за 2023 г.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 0,
       },
       {
         name: 'Основные сведения',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 1,
       },
       {
         name: 'Положение об учебной части ОКТУ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 2,
       },
       {
         name: 'Положение о хозяйственной части ОКТУ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 2,
       },
       {
         name: 'Положение о ресурсном центре ОКТУ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 2,
       },
       {
         name: 'Положение о библиотеке ОКТУ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 2,
       },
       {
         name: 'Положение об архиве ОКТУ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 2,
       },
       {
         name: 'Правила внутреннего распорядка обучающихся',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 3,
       },
       {
         name: 'Правила внутреннего трудового распорядка работников',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 3,
       },
       {
         name: 'Коллективный договор. Дополнение к коллективному договору 2024',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 3,
       },
       {
         name: 'Отчет о результатах самообследования за 2023 год',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 3,
       },
       {
         name: 'Календарный план воспитательной работы',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 3,
       },
       {
         name: 'Программа воспитания 2023 г.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 4,
       },
       {
         name: 'Календарный план воспитательной работы',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 4,
       },
       {
         name: 'Численность обучающихся за счет бюджетных ассигнований на 01 декабря 2023 года',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 4,
       },
       {
         name: 'Количество мест для перевода в 2023-2024 уч.году',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 4,
       },
       {
         name: 'Результаты приема абитуриентов в 2023 году',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 4,
       },
       {
         name: 'Оснащенность аудиторий',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 5,
       },
       {
         name: 'Информация об условиях питания, в том числе для лиц с ОВЗ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Информация о наличии специальных технических средств обучения коллективного и индивидуального пользования для инвалидов и лиц с ОВЗ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Информация об электронных образовательных ресурсах, к которым обеспечивается доступ обучающихся, в том числе приспособленных для использования инвалидами и лицами с ОВЗ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Информация об условиях охраны здоровья обучающихся, в том числе инвалидов и лиц с ОВЗ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Информация о доступе к информационным системам и информационным телекоммуникационным сетям, в том числе приспособленным для использования инвалидами и лицами с ОВЗ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Подключение к ЭБС',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 6,
       },
       {
         name: 'Договор на оказание платных образовательных услуг (СПО)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Договор на оказание платных образовательных услуг (ДПО)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Договор на оказание платных образовательных услуг (ПО)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Договор на оказание платных услуг с несовершеннолетними обучающимися (ПО)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Калькуляции платных образовательных услуг',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Калькуляция затрат по профессии 16675 Повар (профессиональная подготовка)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 7,
       },
       {
         name: 'Финансово-хозяйственная деятельность',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 8,
       },
       {
         name: 'План финансово хозяйственной деятельности на 2022 год',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 8,
       },
       {
         name: 'Отчет об исполнении государственного задания за 2021 г.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 8,
       },
       {
         name: 'Госзадание на 2022 год и плановый период 2023 и 2024 гг.',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 8,
       },
       {
         name: 'Численность студентов ГАПОУ КО "ОКТУ", обучающихся по программам СПО',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 9,
       },
       {
         name: 'Вакантные места по программам СПО',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 9,
       },
       {
         name: 'Положение о порядке назначения и выплаты государственной академической и социальной стипендии',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 10,
       },
       {
         name: 'Приказ о внесении изменений от 26.09.2023 г №784',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 10,
       },
       {
         name: 'Положение о стипендиальной комиссии',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 10,
       },
       {
         name: 'Заключенный  договор с  Профессиональным Лицеем Гостиничного и Ресторанного дела и Питания им. Жана Монз в Лиможе (Франция), в лице его Провизора господина Филиппа ШАДЕЛА',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 11,
       },
       {
         name: 'Организация питания в образовательной организации',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 12,
       },
       {
         name: '08.02.01 Строительство и эксплуатация зданий и сооружений',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '07.02.01 Архитектура',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '35.02.12 Садово-парковое и ландшафтное строительство',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.07 Монтаж и эксплуатация внутренних сантехнических устройств, кондиционирования воздуха и вентиляции',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.08 Монтаж и эксплуатация оборудования и систем газоснабжения',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.04 Водоснабжение и водоотведение',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.01.25 Мастер отделочных строительных и декоративных работ',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '35.02.12 Садово-парковое и ландшафтное строительство 2022 г',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.01.28 Мастер отделочных строительных и декоративных работ 2022 г',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '54.01.20 Графический дизайнер',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.14 Эксплуатация и обслуживание многоквартирного дома',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.15 Информационное моделирование в строительстве',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '07.02.01 Архитектура 2023 г',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '54.02.01 Дизайн (по отраслям)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.04 Водоснабжение и водоотведение (2023)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '08.02.13 Монтаж и эксплуатация внутрених сантехнических устройств, кондиционирования воздуха и вентиляции',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: '07.02.01 Архитектура (2014)',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 13,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 14,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 14,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 15,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 15,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 16,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 16,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 17,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 17,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 18,
       },
       {
         name: 'Тестовый файл',
-        href: 'https://docs.google.com/document/d/187UkgGNrcWqkb2aCGpkHTLgeozoElMqdVgVGMBOC9gk/edit#heading=h.nwwskuvdwee',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
         category: 18,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 19,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 19,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 19,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 20,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 20,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 21,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 21,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 22,
+      },
+      {
+        name: 'Тестовый файл',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 22,
+      },
+      {
+        name: 'Как оставить свой отзыв о качестве услуг, предоставляемых нашей образовательной организацией',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 23,
+      },
+      {
+        name: 'План мероприятий по улучшению качества оказания образовательных услуг',
+        href: 'https://docs.google.com/document/d/1e8shSom31_wT0mty0sRhf0uNLE_M_zim_p_Y7t7N1Cg/edit',
+        category: 23,
       },
     ],
   });
@@ -819,6 +874,58 @@ async function up() {
     ],
   });
 
+  await prisma.professionals.createMany({
+    data: [
+      {
+        title: 'Профессионалитет 2022',
+        description:
+          '01 сентября 2022 года День знаний явился для Обнинского колледжа технологий и услуг рядом знаменательных событий! /P/ В этот день состоялось торжественное открытие двух новых мастерских в рамках проекта «Молодые профессионалы» по компетенциям «Промышленная механика и монтаж» и «Электромонтаж». На данном мероприятии присутствовали руководители ведущих предприятий города и области с которыми колледж активно сотрудничает, а именно: ООО «РАСТР-технология», ПАО ПЗ «Сигнал», Филиал АО ЦС «Звездочка» опытный завод «Вега». /P/ В связи с реформами в сфере среднего профессионального образования, направленными на развитие отечественной промышленности, в нашем колледже к обучению приступили студенты группы ТМ 11-22 по специальности «Технология машиностроения» в рамках Федерального проекта «ПРОФЕССИОНАЛИТЕТ», так как Калужская область вошла в число пилотных регионов, которые участвуют в проекте по направлению машиностроение. (В калужской области всего 5 учебных заведений участвуют в ФП «ПРОФЕССИОНАЛИТЕТ»).',
+      },
+      {
+        title: 'ПЛАНЕТА ЧПУ',
+        description:
+          '22.12.2022 года состоялась экскурсия на филиал АО ЦС «Звездочка, опытный завод «Вега». В экскурсии приняли участие студенты первого курса ГАПОУ КО «ОКТУ», обучающиеся по специальности «Технология машиностроения», которые, в свою очередь являются участниками федеральной программы «Профессионалитет». /P/ Организация экскурсии была осуществлена в рамка сотрудничества «Обнинского колледжа технологий и услуг» и представителей администрации опытного завода «Вега». /P/ Студенты колледжа ознакомились со структурой производства завода «Вега», проследовали в основные и вспомогательные цеха предприятия. /P/ Продукция, производимая заводом – сложные по форме и конфигурации элементы гребных винтов военных и гражданских кораблей. По этому основной объем работ выполняется на станках с числовым программным управлением. /P/ Частью экскурсии было увлекательное интерактивное занятие со студентами колледжа. Ребята ознакомились с работой пятикоординатного обрабатывающего центра с ЧПУ. Изучили основные элементы чертежа обрабатываемой детали, такие как: линейные размеры, допуски на линейные размеры, допуски формы и расположения поверхностей, шероховатость поверхности.',
+      },
+      {
+        title:
+          'Стажировка на предприятии – лидере отрасли по калужской области ООО «Людиновский тепловозостроительный завод».',
+        description:
+          'С 22.11.2022 по 25.11.2022 г. сотрудники Обнинского колледжа технологий и услуг проходили стажировку на одном из старейших машиностроительных заводов калужской области – ООО «Людиновский тепловозостроительный завод», являющимся предприятием – лидером отрасли. /P/ Стажировка проводилась в рамках федерального проекта «Профессионалитет». В процессе стажировки преподаватели колледжа ознакомились с технологическим циклом изготовления продукции производства. Была проведена теоретическая и практическая подготовка к работе на современном промышленном оборудовании, станках с числовым программным управлением, автоматизированных конвейерных линий по сборке технологических узлов механизмов. Большую помощь в процессе теоретического и практического обучения оказали наставники стажировки, общение с которыми проходило в легком и не принудительном формате. /P/ Навыки, полученные в процессе стажировки на предприятии, буду служить серьезным фундаментом для подготовки будущих специалистов, обучающихся по специальности «Технология машиностроения» в рамках федерального проекта «Профессионалитет». ',
+      },
+      {
+        title: 'Прохождение стажировки на базе современных мастерских колледжей.',
+        description:
+          'В рамках федерального проекта «Профессионалитет» сотрудники Обнинского колледжа технологий и услуг проходили стажировку на базе современных мастерских колледжей. Стажировка проводилась с 28.11.2022 по 08.12.2022 г. на базе стажировочной площадки Уфимского авиационного техникума Уфимского университета науки и технологий и Смоленской академии профессионального образования в мастерских «Токарные работы на станках с ЧПУ». /P/ В процессе стажировки преподавателями Обнинского колледжа технологий и услуг были получены качественные навыки работы на станках с ЧПУ. Детально был проработан процесс создания управляющей программы для токарного станка с ЧПУ при помощи программного CAM – модуля (Mastercam) по автоматизированной разработке управляющих программ. После чего готовая программа была запущена на токарном станке с ЧПУ, результатом чего явилась готовая к использованию деталь.',
+      },
+      {
+        title: 'Профессиональное тестирование "НАЙДИ СЕБЯ"',
+        description:
+          'Для определения зоны оптимального профессионального выбора школьников в рамках реализации ФП «Профессионалитет» на базе «Обнинского колледжа технологий и услуг» 23.01.2023г проведено профессиональное тестирование «Найди себя» для учащихся 9-х классов школ г.Обнинска. /P/ Данная методика была адаптирована под специальности колледжа, где по результатам тестирования можно определить ту специальность, которая входит в круг интересов и способностей школьника.',
+      },
+      {
+        title:
+          'Взаимодействие с работодателями по трудоустройству и организации практического обучения',
+        description:
+          'Трудоустройство молодого специалиста и начало работы по специальности - важнейший этап его профессиональной жизни, а успешность трудоустройства - один из главных показателей качества образования. /P/ 06.02.2023г в рамках ФП «Профессионалитет» «Обнинский колледж технологий и услуг» совместно с работодателям предприятий ОАО ПЗ «Сигнал», ГНЦ РФ – ФЭИ, ООО «Ниармедик Фарма» проанализировали потребность предприятий ОПК в выпускниках колледжа, возможность трудоустройства и производственного обучения, включая дипломное проектирование по тематике, согласованной с предприятием.',
+      },
+    ],
+  });
+
+  await prisma.npEducation.createMany({
+    data: [
+      {
+        title: 'Реализация гранта',
+        description:
+          'Реализация гранта «Государственная поддержка профессиональных образовательных организаций в целях обеспечения соответствия их материально-технической базы современным требованиям» 2022 г. /P/ Реализация гранта «Государственная поддержка профессиональных образовательных организаций в целях обеспечения соответствия их материально-технической базы современным требованиям» 2019 г. /P/ В 2019 году по итогам конкурса Министерства просвещения РФ ГАПОУ КО "Обнинский колледж технологий и услуг» получил грант из федерального бюджета в форме субсидий юридическим лицам в рамках реализации мероприятия «Государственная поддержка профессиональных образовательных организаций в целях обеспечения соответствия их материально-технической базы современным требованиям» Федерального проекта «Молодые профессионалы» (Повышение конкурентоспособности профессионального образования) национального проекта «Образование» государственной программы «Развитие образования».',
+      },
+      {
+        title: 'Создание современных мастерских позволит:',
+        description:
+          'увеличить количество реализуемых программ профессионального обучения и дополнительного профессионального образования по востребованным, новым и перспективным профессиям и специальностям в соответствии с приоритетами региона и обновить их содержание, внедрить новые средства и методы организации образовательного процесса; /P/ сформировать перечень дополнительных программ подготовки, переподготовки и повышения квалификации с учетом современных производственных технологий; /P/ расширить возможности использования демонстрационного экзамена как формы оценки качества подготовки специалистов по выбранному направлению; /P/ организовать работу по повышению квалификации сотрудников, занятых в использовании и обслуживании материально-технической базы мастерских; /P/ расширить возможности Организации по созданию площадок и проведению соревнований в рамках чемпионата «Молодые профессионалы» («Ворлдскиллс России»); /P/ продолжить развитие сетевого взаимодействия с образовательными организациями разных уровней, с организациями-работодателями с целью создания условий для проведения независимой оценки квалификации, распространения накопленного опыта; привлечь внимание абитуриентов к актуальным для экономики региона специальностям и профессиям.',
+      },
+    ],
+  });
+
   await prisma.link.createMany({
     data: [
       {
@@ -859,6 +966,8 @@ async function down() {
   await prisma.$executeRaw`TRUNCATE TABLE "TeachStaff" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "File" RESTART IDENTITY CASCADE`;
   await prisma.$executeRaw`TRUNCATE TABLE "PaidEducation" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "Professionals" RESTART IDENTITY CASCADE`;
+  await prisma.$executeRaw`TRUNCATE TABLE "NpEducation" RESTART IDENTITY CASCADE`;
 }
 async function main() {
   try {

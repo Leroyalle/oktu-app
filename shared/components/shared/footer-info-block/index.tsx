@@ -24,7 +24,7 @@ export const FooterInfoBlock: React.FC<Props> = ({ items, className }) => {
             name={item.name}
             href={item.href}
             links={item.links}
-            itemStyles={'text-white hover:text-white/70'}
+            itemStyles={'text-white text-lg hover:text-white/70'}
           />
         ))}
       </ul>

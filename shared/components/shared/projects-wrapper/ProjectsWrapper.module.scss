@@ -1,0 +1,19 @@
+.root {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      font-size: 22px;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        transition: all 150ms ease-in-out;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+}

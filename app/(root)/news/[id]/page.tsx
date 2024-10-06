@@ -1,5 +1,5 @@
 import { prisma } from '@/prisma/prisma-client';
-import { Container, PostWrapper, Title } from '@/shared/components/shared';
+import { AnimateBlock, Container, PostWrapper } from '@/shared/components/shared';
 import { notFound } from 'next/navigation';
 
 export default async function PostPage({ params: { id } }: { params: { id: number } }) {
@@ -17,7 +17,9 @@ export default async function PostPage({ params: { id } }: { params: { id: numbe
 
   return (
     <Container>
-      <PostWrapper item={data} />
+      <AnimateBlock>
+        <PostWrapper item={data} />
+      </AnimateBlock>
     </Container>
   );
 }

@@ -1,12 +1,13 @@
-import { ContactsBlock, Container, Title } from '@/shared/components/shared';
+import { ContactsBlock, Container, Title, AnimateBlock } from '@/shared/components/shared';
 
 export const revalidate = 360;
 export default async function ContactsPage() {
   return (
-    // TODO: паддинг при уменьшении ширины
     <Container className="px-[10px]">
-      <Title text={'Контакты ОКТУ'} size="2xl" className={'mt-4 mb-8'} />
-      <ContactsBlock />
+      <AnimateBlock>
+        <Title text={'Контакты ОКТУ'} size="2xl" className={'mt-4 mb-8'} />
+        <ContactsBlock />
+      </AnimateBlock>
     </Container>
   );
 }

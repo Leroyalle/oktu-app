@@ -26,8 +26,8 @@ export const navigationData = {
       links: [],
     },
     {
-      name: 'ФП "Профессионалитет"',
-      href: '/fp-professionals',
+      name: 'Противодействие коррупцции',
+      href: '/anti-corr',
       links: [],
     },
   ],
@@ -121,12 +121,28 @@ export const navigationData = {
       ],
     },
     {
-      name: 'Родителям',
-      href: '/parents',
+      name: 'Проекты',
+      href: '/projects',
       links: [
         {
-          name: 'Объявления',
-          href: '/news',
+          name: 'Профсоюз',
+          href: '/union',
+          links: [],
+        },
+        {
+          name: 'ФП "Профессионалитет"',
+          href: '/fp-professionals',
+          links: [],
+        },
+        {
+          name: 'НП "Образование"',
+          href: '/np-education',
+          links: [],
+        },
+        {
+          name: 'Студенческий спортивный клуб',
+          href: '/ssc',
+          links: [],
         },
       ],
     },
@@ -140,6 +156,11 @@ export const navigationData = {
     {
       name: 'Стипендии и меры поддержки обучающихся',
       href: '/structure/support',
+      links: [],
+    },
+    {
+      name: 'Независимая оценка качества оказания услуг',
+      href: '/mark',
       links: [],
     },
   ],
@@ -263,6 +284,27 @@ export const navigationData = {
       ],
     },
     {
+      name: 'Проекты',
+      links: [
+        {
+          name: 'Профсоюз',
+          href: '/union',
+        },
+        {
+          name: 'ФП "Профессионалитет"',
+          href: '/fp-professionals',
+        },
+        {
+          name: 'НП "Образование"',
+          href: '/np-education',
+        },
+        {
+          name: 'Студенческий спортивный клуб',
+          href: '/ssc',
+        },
+      ],
+    },
+    {
       name: 'Команда',
       links: [
         {
@@ -315,11 +357,11 @@ export const navigationData = {
       ],
     },
     {
-      name: 'Профессионалитет',
+      name: 'Противодействие коррупции',
       links: [
         {
-          name: 'Основное',
-          href: '/fp-professionals',
+          name: 'Главная',
+          href: '/anti-corr',
         },
       ],
     },

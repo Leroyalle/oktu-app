@@ -68,8 +68,6 @@ model DepartmentItem {
   topDescription    String
   bottomDescription String?
 
-  // TODO: привязать файлы и преимущества профессии
-
   department   Department? @relation(fields: [departmentId], references: [id])
   departmentId Int?        @unique
 
@@ -154,7 +152,6 @@ model TeachStaff {
 
   role     String
   fullName String
-  // TODO: добавить отдельную таблицу с уроками и привязать к преподавателю subject  String 
   order    Int    @default(1)
 
   createdAt DateTime @default(now())
@@ -181,6 +178,26 @@ model PaidEducation {
   making     String
   price      BigInt
   comment    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Professionals {
+  id Int @id @default(autoincrement())
+
+  title       String
+  description String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model NpEducation {
+  id Int @id @default(autoincrement())
+
+  title       String
+  description String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

@@ -1,4 +1,4 @@
-import './globals.css';
+import './globals.scss';
 import { Nunito, Inter } from 'next/font/google';
 import { Providers } from '@/shared/components/shared';
 import Head from 'next/head';

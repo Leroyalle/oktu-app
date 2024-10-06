@@ -1,4 +1,4 @@
-import { Container, GalleryWrapper, NewsWrapper, Title } from '@/shared/components/shared';
+import { Container, GalleryWrapper, Title } from '@/shared/components/shared';
 
 export default async function Gallery() {
   return (

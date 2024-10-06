@@ -5,6 +5,7 @@ import styles from './GalleryWrapper.module.scss';
 import { GallerySection } from '../gallery-section';
 import { useGalleryData } from '@/shared/hooks/use-gallery-data';
 import { Skeleton } from '../../ui';
+import { AnimateBlock } from '../animate-block';
 
 interface Props {
   className?: string;
@@ -24,7 +25,9 @@ export const GalleryWrapper: React.FC<Props> = ({ className }) => {
   }
   return (
     <section className={cn(styles.root, className)}>
-      <GallerySection items={galleryStore.items} />
+      <AnimateBlock>
+        <GallerySection items={galleryStore.items} />
+      </AnimateBlock>
       <div ref={ref} />
     </section>
   );

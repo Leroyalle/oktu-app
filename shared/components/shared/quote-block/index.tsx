@@ -1,12 +1,10 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
-import Image from 'next/image';
 import styles from './QuoteBlock.module.scss';
 import { Button } from '../../ui';
 import Link from 'next/link';
 import { QuoteText } from '../quote-text';
 import { QuoteWithRelations } from '@/@types/dataDTO';
-
 interface Props {
   quote: QuoteWithRelations | null;
   className?: string;
@@ -17,7 +15,7 @@ export const QuoteBlock: React.FC<Props> = ({ quote, className }) => {
     return;
   }
   return (
-    <div className={cn(styles.wrapper, className)}>
+    <section className={cn(styles.wrapper, 'quoteBlock', className)}>
       <div className={styles.inner}>
         <p className={styles.title}>{quote.author}</p>
         <QuoteText text={quote.text} />
@@ -27,9 +25,7 @@ export const QuoteBlock: React.FC<Props> = ({ quote, className }) => {
           </Link>
         )}
       </div>
-      {quote.imageUrl && (
-        <Image priority src={quote.imageUrl} alt={'direction'} width={500} height={400} />
-      )}
-    </div>
+      {quote.imageUrl && <img src={quote.imageUrl} alt={'direction'} width={400} height={400} />}
+    </section>
   );
 };

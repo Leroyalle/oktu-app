@@ -1,5 +1,5 @@
 import { prisma } from '@/prisma/prisma-client';
-import { ContactUs, Container, DepartmentWrapper } from '@/shared/components/shared';
+import { AnimateBlock, ContactUs, Container, DepartmentWrapper } from '@/shared/components/shared';
 import { notFound } from 'next/navigation';
 
 export default async function Department({ params: { id } }: { params: { id: number } }) {
@@ -15,10 +15,11 @@ export default async function Department({ params: { id } }: { params: { id: num
     return notFound();
   }
   return (
-    // TODO: добавпить кнопку вернуться назад
     <Container>
-      <DepartmentWrapper item={data} />
-      <ContactUs name={data.name} />
+      <AnimateBlock>
+        <DepartmentWrapper item={data} />
+        <ContactUs name={data.name} />
+      </AnimateBlock>
     </Container>
   );
 }

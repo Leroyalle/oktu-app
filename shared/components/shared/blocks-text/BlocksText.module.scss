@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    h1 {
+      font-size: 35px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+  @media (width <= 769px) {
+    div {
+      h1 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+  @media (width <= 400px) {
+    div {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+}

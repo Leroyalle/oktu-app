@@ -5,6 +5,7 @@ import {
   QuoteBlock,
   MainSlider,
   TitlesBlock,
+  AnimateBlock,
 } from '@/shared/components/shared';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -34,16 +35,18 @@ export default async function Home() {
 
   return (
     <Container>
-      <MainSlider items={mainSliderData} />
-      <div className="mt-20">
-        <QuoteBlock quote={quote} />
-      </div>
-      <div className="mt-20">
-        <Departments items={departments} />
-      </div>
-      <div className="mt-36 mb-20">
-        <TitlesBlock items={titles} />
-      </div>
+      <AnimateBlock>
+        <MainSlider items={mainSliderData} />
+        <AnimateBlock className="mt-20">
+          <QuoteBlock quote={quote} />
+        </AnimateBlock>
+        <AnimateBlock className="mt-20">
+          <Departments items={departments} />
+        </AnimateBlock>
+        <AnimateBlock className="mt-36 mb-20">
+          <TitlesBlock items={titles} />
+        </AnimateBlock>
+      </AnimateBlock>
     </Container>
   );
 }

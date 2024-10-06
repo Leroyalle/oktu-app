@@ -6,11 +6,10 @@ import { Department } from '@prisma/client';
 import { Title } from '../title';
 import { DepartmentItem } from '../department-item';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, FreeMode, Grid, Navigation } from 'swiper/modules';
+import { FreeMode, Grid, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/grid';
-import 'swiper/css/effect-coverflow';
 
 interface Props {
   items: Department[];
@@ -24,7 +23,6 @@ export const Departments: React.FC<Props> = ({ items, className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <Title text={'Факультеты'} size={'xl'} className="mb-8 ml-[10px]" />
-      {/* FIXME: пофиксть фулл баг слайдер */}
       <Swiper
         className={styles.swiper}
         spaceBetween={10}

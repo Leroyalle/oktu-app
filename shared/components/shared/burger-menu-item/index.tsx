@@ -18,6 +18,12 @@ interface Props {
 
 export const BurgerMenuItem: React.FC<Props> = ({ item, onClose, className }) => {
   const [isOpened, setIsOpened] = React.useState(false);
+
+  const onClickLink = () => {
+    setIsOpened(false);
+    onClose();
+  };
+
   return (
     <div className={cn(styles.root, className)}>
       <p onClick={() => setIsOpened(!isOpened)} className={styles.row}>
@@ -27,7 +33,7 @@ export const BurgerMenuItem: React.FC<Props> = ({ item, onClose, className }) =>
       <ul className={cn(styles.links, isOpened && styles.isOpened)}>
         {item.links.map(({ name, href }, i) => (
           <li key={i}>
-            <Link href={href} onClick={onClose}>
+            <Link href={href} onClick={() => onClickLink()}>
               {name}
             </Link>
           </li>
