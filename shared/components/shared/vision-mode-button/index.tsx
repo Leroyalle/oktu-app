@@ -18,9 +18,7 @@ export const VisionModeButton: React.FC<Props> = ({ className }) => {
   const setVisionModeAndCookies = () => {
     if (!isVisionMode) {
       window.localStorage.setItem('visible-mode', 'true');
-      console.log(true);
     } else {
-      console.log(false);
       window.localStorage.setItem('visible-mode', 'false');
     }
     setIsVisionMode();

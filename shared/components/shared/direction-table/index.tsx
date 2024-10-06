@@ -1,15 +1,17 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './DirectionTable.module.scss';
-import { Direction } from '@prisma/client';
+import { Direction, File } from '@prisma/client';
 import { ContactsTableItem } from '../contacts-table-item';
+import { FilesBlock } from '../files-block';
 
 interface Props {
+  files: File[];
   items: Direction[];
   className?: string;
 }
 
-export const DirectionTable: React.FC<Props> = ({ items, className }) => {
+export const DirectionTable: React.FC<Props> = ({ files, items, className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <table>
@@ -26,6 +28,7 @@ export const DirectionTable: React.FC<Props> = ({ items, className }) => {
           ))}
         </tbody>
       </table>
+      <FilesBlock items={files} className="mt-4" />
     </section>
   );
 };

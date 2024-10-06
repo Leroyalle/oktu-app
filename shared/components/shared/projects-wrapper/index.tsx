@@ -11,7 +11,6 @@ interface Props {
 }
 
 export const ProjectsWrapper: React.FC<Props> = ({ className }) => {
-  console.log(navigationData.bottom[-1]);
   return (
     <section className={cn(styles.root, className)}>
       <ul>
