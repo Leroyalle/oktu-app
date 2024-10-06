@@ -5,12 +5,14 @@ import styles from './ProjectsWrapper.module.scss';
 import { navigationData } from '@/shared/constants';
 import Link from 'next/link';
 import { MoveRight, Undo2 } from 'lucide-react';
+import { FilesBlock } from '../files-block';
 
 interface Props {
+  files: File[];
   className?: string;
 }
 
-export const ProjectsWrapper: React.FC<Props> = ({ className }) => {
+export const ProjectsWrapper: React.FC<Props> = ({ files, className }) => {
   return (
     <section className={cn(styles.root, className)}>
       <ul>
@@ -23,6 +25,7 @@ export const ProjectsWrapper: React.FC<Props> = ({ className }) => {
           </li>
         ))}
       </ul>
+      <FilesBlock title={'Основные материалы:'} items={files} className="my-4" />
     </section>
   );
 };
