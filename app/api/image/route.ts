@@ -24,7 +24,6 @@ export async function GET(req: NextRequest) {
     const totalCount = images.length;
     return NextResponse.json({ images, totalCount });
   } catch (error) {
-    console.log('Fetch Images', error);
-    return error;
+    console.log('Error [GET_IMAGES]', error);
   }
 }
