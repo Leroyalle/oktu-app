@@ -2,8 +2,8 @@ import { prisma } from '@/prisma/prisma-client';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
-  const skip = req.nextUrl.searchParams.get('skip');
-  const take = req.nextUrl.searchParams.get('take');
+  const skip = req.nextUrl.searchParams.get('skip') || 0;
+  const take = req.nextUrl.searchParams.get('take') || 12;
   const data = await prisma.image.findMany({
     skip: Number(skip),
     take: Number(take),
