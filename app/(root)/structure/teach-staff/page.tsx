@@ -3,7 +3,7 @@ import {
   Container,
   Title,
   SimilarLinks,
-  TechStaffTable,
+  FilesBlock,
   AnimateBlock,
 } from '@/shared/components/shared';
 import { navigationData } from '@/shared/constants';
@@ -21,7 +21,7 @@ export default async function StaffPage() {
       <AnimateBlock>
         <Title text={'Педагогический состав'} size="2xl" className={'mt-4 mb-12 pageTitle'} />
         <div className="pb-[40px] max-w-[1200px]">
-          <TechStaffTable files={files} items={items} />
+          <FilesBlock items={files} className="mt-4" />
         </div>
         <Title text={'Другие сведения'} size={'xl'} className="mb-8 pageSubtitle" />
         <div className="pb-[80px] max-w-[1200px] ">

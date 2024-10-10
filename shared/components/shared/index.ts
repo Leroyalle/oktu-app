@@ -51,3 +51,4 @@ export { ProjectsWrapper } from './projects-wrapper';
 export { MarkWrapper } from './mark-wrapper';
 export { AnimateBlock } from './animate-block';
 export { Faq } from './faq';
+export { FilesBlock } from './files-block';
