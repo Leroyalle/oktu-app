@@ -252,10 +252,6 @@ export const navigationData = {
           href: '/structure/support',
         },
         {
-          name: 'Международное сотрудничество',
-          href: '/structure/international',
-        },
-        {
           name: 'Организация питания',
           href: '/structure/feeding',
         },
