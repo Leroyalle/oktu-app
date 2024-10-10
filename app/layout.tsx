@@ -18,6 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link data-rh="true" rel="icon" href="/assets/logo.jpg" />
+        <meta
+          name="google-site-verification"
+          content="8k1dAd-CfBfTsAJnPfoILmWQGwyromzRPiIjMVLSRy4"
+        />
+        <meta name="yandex-verification" content="9778a5f10f6d8fd4" />
       </Head>
       <body className={`${nunito.className}`}>
         <Providers>{children}</Providers>
