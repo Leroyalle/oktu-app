@@ -11,6 +11,7 @@
   }
   .imageInner {
     width: 49%;
+    overflow: hidden;
     @media (max-width: 800px) {
       width: 100%;
     }
@@ -23,6 +24,10 @@
     border-radius: 4px;
     max-height: 300px;
     object-fit: cover;
+    transition: all 850ms ease-in-out;
+    &:hover {
+      scale: 1.1;
+    }
   }
   .content {
     display: flex;
