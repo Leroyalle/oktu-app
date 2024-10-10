@@ -82,10 +82,6 @@ export const navigationData = {
           href: '/structure/support',
         },
         {
-          name: 'Международное сотрудничество',
-          href: '/structure/international',
-        },
-        {
           name: 'Организация питания в образовательной организации',
           href: '/structure/feeding',
         },
