@@ -41,8 +41,8 @@ export const CommonInfoBlock: React.FC<Props> = ({ files, className }) => {
       <InfoItem title={'Факс:'} text={'+7(484) 396-01-67'} href={'tel:213123123'} />
       <InfoItem
         title={'Адрес электронной почты:'}
-        text={'ksl299@yandex.ru'}
-        href={'mailto:ksl299@yandex.ru'}
+        text={'pl_26@mail.ru'}
+        href={'mailto:pl_26@mail.ru'}
       />
       <ItemsWithTitle
         title={'Места осуществления образовательной деятельности:'}

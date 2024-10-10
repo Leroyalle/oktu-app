@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .question {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 150ms ease-in-out;
+    .icon {
+      transition: all 150ms ease-in-out;
+    }
+    .iconRotate {
+      rotate: 180deg;
+    }
+    &:hover {
+      color: rgb(100, 100, 100);
+    }
+    &:active {
+      color: rgb(199, 199, 199);
+    }
+  }
+  .answer {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(55, 55, 55);
+    font-style: italic;
+    font-size: 19px;
+  }
+}

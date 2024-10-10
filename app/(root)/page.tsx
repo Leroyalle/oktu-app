@@ -6,6 +6,7 @@ import {
   MainSlider,
   TitlesBlock,
   AnimateBlock,
+  Faq,
 } from '@/shared/components/shared';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -32,6 +33,11 @@ export default async function Home() {
     },
   });
   const titles = await prisma.titlesSection.findMany();
+  const faq = await prisma.fAQ.findMany({
+    where: {
+      onMain: true,
+    },
+  });
 
   return (
     <Container>
@@ -45,6 +51,9 @@ export default async function Home() {
         </AnimateBlock>
         <AnimateBlock className="mt-36 mb-20">
           <TitlesBlock items={titles} />
+        </AnimateBlock>
+        <AnimateBlock className="mt-36 mb-20">
+          <Faq title="Часто задаваемые вопросы" items={faq} hasLink />
         </AnimateBlock>
       </AnimateBlock>
     </Container>

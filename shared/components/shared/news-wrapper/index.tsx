@@ -28,19 +28,21 @@ export const NewsWrapper: React.FC<Props> = ({ className }) => {
     );
   }
 
+  console.log(newsStore.items.length);
   return (
     <section className={cn(styles.root, className)}>
       <NewsSection items={newsStore.items} loading={newsStore.loading} />
-
-      <div className="mt-[50px]">
-        <PaginationButtons
-          disabledPrev={page <= 1}
-          disabledNext={page >= newsStore.totalPages}
-          onClick={onChangePage}
-          page={page}
-          totalPage={newsStore.totalPages}
-        />
-      </div>
+      {newsStore.totalPages > 1 && (
+        <div className="mt-[50px]">
+          <PaginationButtons
+            disabledPrev={page <= 1}
+            disabledNext={page >= newsStore.totalPages}
+            onClick={onChangePage}
+            page={page}
+            totalPage={newsStore.totalPages}
+          />
+        </div>
+      )}
     </section>
   );
 };

@@ -8,6 +8,7 @@
   }
   .text {
     transition: color 150ms ease-in-out;
+    text-wrap: nowrap;
     font-size: 18px;
     color: white;
     &:hover {

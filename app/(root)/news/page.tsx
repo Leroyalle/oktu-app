@@ -5,7 +5,6 @@ export default async function News() {
   return (
     <Container className="px-[10px]">
       <Title text={'Новости'} size="2xl" className={'mt-4 mb-4 pageTitle'} />
-      {/* TODO: добавить поиск */}
       <Suspense>
         <NewsWrapper />
       </Suspense>

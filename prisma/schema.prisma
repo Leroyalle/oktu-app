@@ -52,9 +52,8 @@ model Quote {
 model Department {
   id Int @id @default(autoincrement())
 
-  name             String
-  imageUrl         String
-  shortDescription String
+  name     String
+  imageUrl String
 
   departmentItem DepartmentItem?
 
@@ -199,6 +198,17 @@ model NpEducation {
 
   title       String
   description String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model FAQ {
+  id Int @id @default(autoincrement())
+
+  question String
+  answer   String
+  onMain   Boolean @default(false)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

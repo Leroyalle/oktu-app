@@ -10,7 +10,12 @@ import { navigationData } from '@/shared/constants';
 
 export const revalidate = 360;
 export default async function DirectionPage() {
-  const items = await prisma.direction.findMany();
+  // TODO: центр карьеры в меню
+  const items = await prisma.direction.findMany({
+    orderBy: {
+      order: 'desc',
+    },
+  });
   const files = await prisma.file.findMany({
     where: {
       category: 24,

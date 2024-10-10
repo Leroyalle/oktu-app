@@ -26,8 +26,13 @@ export const navigationData = {
       links: [],
     },
     {
-      name: 'Противодействие коррупцции',
-      href: '/anti-corr',
+      name: 'Профсоюз',
+      href: '/union',
+      links: [],
+    },
+    {
+      name: 'ССК "ВУЛКАН"',
+      href: '/ssc',
       links: [],
     },
   ],
@@ -125,11 +130,6 @@ export const navigationData = {
       href: '/projects',
       links: [
         {
-          name: 'Профсоюз',
-          href: '/union',
-          links: [],
-        },
-        {
           name: 'ФП "Профессионалитет"',
           href: '/fp-professionals',
           links: [],
@@ -139,28 +139,23 @@ export const navigationData = {
           href: '/np-education',
           links: [],
         },
-        {
-          name: 'Студенческий спортивный клуб',
-          href: '/ssc',
-          links: [],
-        },
       ],
     },
   ],
   footerInfo: [
     {
-      name: 'Сведения об образовательной организации',
-      href: '/structure',
-      links: [],
-    },
-    {
-      name: 'Стипендии и меры поддержки обучающихся',
-      href: '/structure/support',
+      name: 'Часто задаваемые вопросы',
+      href: '/faq',
       links: [],
     },
     {
       name: 'Независимая оценка качества оказания услуг',
       href: '/mark',
+      links: [],
+    },
+    {
+      name: 'Противодействие коррупцции',
+      href: '/anti-corr',
       links: [],
     },
   ],

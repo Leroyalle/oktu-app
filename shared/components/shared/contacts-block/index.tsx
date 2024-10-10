@@ -30,7 +30,6 @@ export const ContactsBlock: React.FC<Props> = ({ className }) => {
         href={'mailto:ksl299@yandex.ru'}
       />
       <Address title={'Адреса отделений ОКТУ:'} items={addressData} />
-      {/* TODO: вопрос-ответ как добраться с яндекс картой */}
     </section>
   );
 };

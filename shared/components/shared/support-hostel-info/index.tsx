@@ -32,7 +32,7 @@ export const SupportHostelInfo: React.FC<Props> = ({ className }) => {
       </div>
       <div className={styles.inner}>
         <Paragraph
-          text={'Общежитие №1 по адресу г. Обнинск, ул. Курчатова, д.37'}
+          text={'Общежитие №2 по адресу г. Обнинск, Самсоновский проезд 6'}
           className="font-bold"
         />
         <Paragraph
@@ -41,7 +41,6 @@ export const SupportHostelInfo: React.FC<Props> = ({ className }) => {
           }
         />
       </div>
-      <Paragraph text={'Общежитие №2 по адресу г. Обнинск, ул. Курчатова, д.33.'} />
     </div>
   );
 };

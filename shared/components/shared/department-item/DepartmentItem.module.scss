@@ -9,14 +9,15 @@
   justify-content: center;
   &:hover {
     img {
-      -webkit-filter: blur(5px);
-      -moz-filter: blur(5px);
-      -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-      filter: blur(5px);
-      @media (hover: none) {
-        filter: none;
-      }
+      scale: 1.1;
+      // -webkit-filter: blur(5px);
+      // -moz-filter: blur(5px);
+      // -o-filter: blur(5px);
+      // -ms-filter: blur(5px);
+      // filter: blur(5px);
+      // @media (hover: none) {
+      //   filter: none;
+      // }
     }
     .content {
       p {
@@ -32,7 +33,7 @@
     width: 100%;
     z-index: -1;
     height: 100%;
-    transition: all 250ms ease-in-out;
+    transition: all 800ms ease-in-out;
   }
   .content {
     margin-top: 45px;

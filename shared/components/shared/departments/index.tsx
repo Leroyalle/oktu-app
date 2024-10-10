@@ -17,12 +17,12 @@ interface Props {
 }
 
 export const Departments: React.FC<Props> = ({ items, className }) => {
-  if (items.length === 0) {
+  if (!items || items.length === 0) {
     return;
   }
   return (
     <section className={cn(styles.root, className)}>
-      <Title text={'Факультеты'} size={'xl'} className="mb-8 ml-[10px]" />
+      <Title text={'Профессии'} size={'xl'} className="mb-8 ml-[10px]" />
       <Swiper
         className={styles.swiper}
         spaceBetween={10}
@@ -50,12 +50,7 @@ export const Departments: React.FC<Props> = ({ items, className }) => {
         navigation>
         {items?.map((item) => (
           <SwiperSlide key={item.id} className={styles.slide}>
-            <DepartmentItem
-              id={item.id}
-              name={item.name}
-              imageUrl={item.imageUrl}
-              shortDescription={item.shortDescription}
-            />
+            <DepartmentItem id={item.id} name={item.name} imageUrl={item.imageUrl} />
           </SwiperSlide>
         ))}
       </Swiper>
