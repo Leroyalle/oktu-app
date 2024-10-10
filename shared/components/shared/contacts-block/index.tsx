@@ -26,8 +26,8 @@ export const ContactsBlock: React.FC<Props> = ({ className }) => {
       <RowInfo title={'Факс:'} text={'+7 (484) 396-01-67'} href={'tel:74843960167'} />
       <RowInfo
         title={'Адрес электронной почты:'}
-        text={'ksl299@yandex.ru'}
-        href={'mailto:ksl299@yandex.ru'}
+        text={'pl_26@mail.ru'}
+        href={'mailto:pl_26@mail.ru'}
       />
       <Address title={'Адреса отделений ОКТУ:'} items={addressData} />
     </section>
