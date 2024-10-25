@@ -1,8 +1,6 @@
 import React from 'react';
 import { cn } from '@/shared/lib/utils';
 import styles from './ContactUs.module.scss';
-import { Paragraph } from '../paragraph';
-import { TextOrLinkWithStrong } from '../text-or-link-with-strong';
 import { Title } from '../title';
 
 interface Props {

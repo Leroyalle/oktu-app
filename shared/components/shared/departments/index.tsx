@@ -45,6 +45,12 @@ export const Departments: React.FC<Props> = ({ items, className }) => {
             slidesPerGroup: 2,
             grid: { rows: 2, fill: 'row' },
           },
+          1300: {
+            spaceBetween: 30,
+            slidesPerView: 3.2,
+            slidesPerGroup: 2,
+            grid: { rows: 2, fill: 'row' },
+          },
         }}
         modules={[FreeMode, Grid, Navigation]}
         navigation>
