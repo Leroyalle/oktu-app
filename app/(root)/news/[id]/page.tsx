@@ -15,6 +15,7 @@ export default async function PostPage({ params: { id } }: { params: { id: numbe
       },
     },
   });
+
   if (!data || !data.postItem) {
     return notFound();
   }

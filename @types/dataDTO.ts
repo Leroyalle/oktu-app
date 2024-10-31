@@ -27,7 +27,7 @@ export type ImageWithRelations = {
 };
 export type ImageWithItems = Image & { imageItem: ImageItem[] };
 export type PostWithItem = Post & {
-  postItem: (PostItem | null) & { postImageCarousel: PostImageCarousel[] };
+  postItem: (PostItem & { postImageCarousel: PostImageCarousel[] }) | null;
 };
 export type DepartmentWithItem = Department & {
   departmentItem: DepartmentItem | null;

@@ -12,10 +12,6 @@ export const PostText: React.FC<Props> = ({ textItems, className }) => {
     return;
   }
   return (
-    <div className={cn(styles.root, className)} dangerouslySetInnerHTML={{ __html: textItems }}>
-      {/* {textItems.map((item, i) => (
-        <p key={i}>{item.trim()}</p>
-      ))} */}
-    </div>
+    <div className={cn(styles.root, className)} dangerouslySetInnerHTML={{ __html: textItems }} />
   );
 };
