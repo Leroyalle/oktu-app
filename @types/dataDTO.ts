@@ -8,6 +8,7 @@ import {
   PostItem,
   Department,
   DepartmentItem,
+  PostImageCarousel,
 } from '@prisma/client';
 
 export type MainSliderDataWithRelations = MainSliderData & {
@@ -25,7 +26,9 @@ export type ImageWithRelations = {
   totalCount: number;
 };
 export type ImageWithItems = Image & { imageItem: ImageItem[] };
-export type PostWithItem = Post & { postItem: PostItem | null };
+export type PostWithItem = Post & {
+  postItem: (PostItem | null) & { postImageCarousel: PostImageCarousel[] };
+};
 export type DepartmentWithItem = Department & {
   departmentItem: DepartmentItem | null;
 };

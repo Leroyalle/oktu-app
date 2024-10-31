@@ -3,8 +3,8 @@ import { cn } from '@/shared/lib/utils';
 import styles from './PostWrapper.module.scss';
 import { Banner, Text } from '../post-content';
 import { PostWithItem } from '@/@types/dataDTO';
-import { getTextArray } from '@/shared/lib';
 import { Title } from '../title';
+import { PostItemImageCarousel } from '../post-item-image-carousel';
 
 interface Props {
   item: PostWithItem;
@@ -24,7 +24,8 @@ export const PostWrapper: React.FC<Props> = ({ item, className }) => {
         <Title text={item.name} size={'2xl'} className={styles.title} />
         <span>{new Date(item.createdAt).toLocaleDateString()}</span>
       </div>
-      <Text textItems={getTextArray(item.postItem.description)} />
+      <Text textItems={item.postItem.description} />
+      <PostItemImageCarousel items={item.postItem.postImageCarousel} className={styles.carousel} />
     </section>
   );
 };

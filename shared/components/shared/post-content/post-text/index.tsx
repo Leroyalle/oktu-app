@@ -3,7 +3,7 @@ import { cn } from '@/shared/lib/utils';
 import styles from './PostText.module.scss';
 
 interface Props {
-  textItems: string[];
+  textItems: string;
   className?: string;
 }
 
@@ -12,10 +12,10 @@ export const PostText: React.FC<Props> = ({ textItems, className }) => {
     return;
   }
   return (
-    <div className={cn(styles.root, className)}>
-      {textItems.map((item, i) => (
+    <div className={cn(styles.root, className)} dangerouslySetInnerHTML={{ __html: textItems }}>
+      {/* {textItems.map((item, i) => (
         <p key={i}>{item.trim()}</p>
-      ))}
+      ))} */}
     </div>
   );
 };

@@ -97,6 +97,20 @@ model PostItem {
   post   Post @relation(fields: [postId], references: [id])
   postId Int  @unique
 
+  postImageCarousel PostImageCarousel[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model PostImageCarousel {
+  id Int @id @default(autoincrement())
+
+  imageUrl String
+
+  postItem   PostItem @relation(fields: [postItemId], references: [id])
+  postItemId Int
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }

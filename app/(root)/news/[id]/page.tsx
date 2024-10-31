@@ -8,7 +8,11 @@ export default async function PostPage({ params: { id } }: { params: { id: numbe
       id: Number(id),
     },
     include: {
-      postItem: true,
+      postItem: {
+        include: {
+          postImageCarousel: true,
+        },
+      },
     },
   });
   if (!data || !data.postItem) {
