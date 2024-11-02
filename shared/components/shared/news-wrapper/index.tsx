@@ -28,7 +28,6 @@ export const NewsWrapper: React.FC<Props> = ({ className }) => {
     );
   }
 
-  console.log(newsStore.items.length);
   return (
     <section className={cn(styles.root, className)}>
       <NewsSection items={newsStore.items} loading={newsStore.loading} />

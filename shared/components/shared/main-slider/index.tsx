@@ -7,12 +7,13 @@ import 'swiper/css/navigation';
 import { MainSliderItem } from '../main-slider-item';
 import { MainSliderDataWithRelations } from '@/@types/dataDTO';
 import styles from './MainSlider.module.scss';
+import { Post } from '@prisma/client';
 
 interface Props {
   items: MainSliderDataWithRelations[];
-  className?: string;
+  lastPost: Post | null;
 }
-export const MainSlider: React.FC<Props> = ({ items, className }) => {
+export const MainSlider: React.FC<Props> = ({ items, lastPost }) => {
   if (items.length === 0) {
     return;
   }
@@ -38,6 +39,16 @@ export const MainSlider: React.FC<Props> = ({ items, className }) => {
           />
         </SwiperSlide>
       ))}
+      {lastPost && (
+        <SwiperSlide>
+          <MainSliderItem
+            imageUrl={lastPost.imageUrl}
+            title={lastPost.name}
+            link={{ name: 'К новостям', href: `/news` }}
+            text={lastPost.shortDescription}
+          />
+        </SwiperSlide>
+      )}
     </Swiper>
   );
 };

@@ -39,10 +39,16 @@ export default async function Home() {
     },
   });
 
+  const lastPost = await prisma.post.findFirst({
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+
   return (
     <Container>
       <AnimateBlock>
-        <MainSlider items={mainSliderData} />
+        <MainSlider items={mainSliderData} lastPost={lastPost} />
         <AnimateBlock className="mt-20">
           <QuoteBlock quote={quote} />
         </AnimateBlock>
