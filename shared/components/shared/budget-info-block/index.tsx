@@ -22,8 +22,8 @@ export const BudgetInfoBlock: React.FC<Props> = ({ files, className }) => {
       />
       <TextOrLinkWithStrong
         title={'Элетронный адрес -'}
-        text={'vasilkova_26@mail.ru'}
-        href={'mailto:vasilkova_26@mail.ru'}
+        text={'14elenastepanova@mail.ru'}
+        href={'mailto:14elenastepanova@mail.ru'}
       />
       <div className="my-4">
         <Paragraph

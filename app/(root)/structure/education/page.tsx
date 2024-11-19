@@ -15,6 +15,15 @@ export default async function EducationPage() {
       category: 4,
     },
   });
+
+  const manyFiles = await prisma.file.findMany({
+    where: {
+      category: {
+        in: [4, 26, 27],
+      },
+    },
+  });
+
   return (
     <Container className="px-[10px]">
       <AnimateBlock>
@@ -24,7 +33,7 @@ export default async function EducationPage() {
           className={'mt-4 mb-12 pageTitle'}
         />
         <div className="pl-[15px] pb-[40px]">
-          <EducationInfoBlock files={files} />
+          <EducationInfoBlock files={manyFiles} />
         </div>
         <Title text={'Другие сведения'} size={'xl'} className="mb-8 pageSubtitle" />
         <div className="pb-[80px] max-w-[1200px]">

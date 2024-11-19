@@ -29,7 +29,7 @@ export const EducationInfoList: React.FC<Props> = ({ className }) => {
       <li>
         <TextOrLinkWithStrong
           title={'Государственная аккредитация -'}
-          text={'серия 40А01 №0000039, рег №14 от 01.02.2016, бессрочная'}
+          text={'серия № А007-01224-40/01156045 от 01.02.2016, бессрочная'}
         />
       </li>
     </ol>

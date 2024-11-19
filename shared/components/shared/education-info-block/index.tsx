@@ -18,7 +18,18 @@ export const EducationInfoBlock: React.FC<Props> = ({ files, className }) => {
     <section className={cn(styles.root, className)}>
       <EducationInfoList />
       <div className="my-4">
-        <FilesBlock items={files} />
+        <FilesBlock
+          title="Основные профессиональные образовательные программы"
+          items={files.filter((file) => file.category === 4)}
+        />
+        <FilesBlock
+          title="Программы воспитания"
+          items={files.filter((file) => file.category === 26)}
+        />
+        <FilesBlock
+          title="Программы государственной итоговой аттестации"
+          items={files.filter((file) => file.category === 27)}
+        />
       </div>
       <TextOrLinkWithStrong
         title={
