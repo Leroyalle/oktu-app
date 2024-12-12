@@ -8,9 +8,14 @@ import {
   AnimateBlock,
   Faq,
 } from '@/shared/components/shared';
+import dynamic from 'next/dynamic';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
+
+const DynamicGosWidget = dynamic(() => import('../../shared/components/shared/gos-widget'), {
+  ssr: false,
+});
 
 export const revalidate = 40;
 export default async function Home() {
@@ -51,6 +56,9 @@ export default async function Home() {
         <MainSlider items={mainSliderData} lastPost={lastPost} />
         <AnimateBlock className="mt-20">
           <QuoteBlock quote={quote} />
+        </AnimateBlock>
+        <AnimateBlock className="mt-20">
+          <DynamicGosWidget />
         </AnimateBlock>
         <AnimateBlock className="mt-20">
           <Departments items={departments} />

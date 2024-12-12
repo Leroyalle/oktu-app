@@ -14,7 +14,7 @@ interface Props {
 export const BudgetInfoBlock: React.FC<Props> = ({ files, className }) => {
   return (
     <section className={cn(styles.root, className)}>
-      <TextOrLinkWithStrong title={'Главный бухгалтер -'} text={'Василькова Елена Денисовна'} />
+      <TextOrLinkWithStrong title={'Главный бухгалтер -'} text={'Степанова Елена Анатольевна'} />
       <TextOrLinkWithStrong
         title={'Телефон -'}
         text={'8(48439) 6-20-86'}

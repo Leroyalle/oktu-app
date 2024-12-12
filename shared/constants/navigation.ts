@@ -135,6 +135,11 @@ export const navigationData = {
           href: '/np-education',
           links: [],
         },
+        {
+          name: 'Центр карьеры',
+          href: '/career',
+          links: [],
+        },
       ],
     },
   ],
@@ -288,6 +293,10 @@ export const navigationData = {
         {
           name: 'Студенческий спортивный клуб',
           href: '/ssc',
+        },
+        {
+          name: 'Центр карьеры',
+          href: '/career',
         },
       ],
     },
